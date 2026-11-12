@@ -207,6 +207,75 @@ table.tbl{width:100%;border-collapse:collapse;font-size:14px}
 .hint-line{margin:0;font-size:13px;color:var(--muted)}
 .btn-block{width:100%;min-height:48px;font-size:16px}
 .banner-info{background:#EAF1FB;color:#12223F;border:1px solid #C9D9F0}
+/* ===== compact app (fit without scrolling) ===== */
+.shell{font-size:14px}
+.shell .topbar{min-height:50px;padding:5px 14px}
+.shell .icon-btn{width:34px;height:34px}
+.icon-btn.sm{width:28px;height:28px;border-radius:7px}
+.shell .btn{min-height:36px;padding:0 14px;border-radius:8px;font-size:14px}
+.shell .btn-sm{min-height:32px;padding:0 11px;font-size:13px;gap:6px}
+.shell .input,.shell select.input{min-height:36px;padding:0 10px;border-radius:8px}
+.shell .input.num{width:64px}
+.shell .field{gap:4px}
+.shell .field label{font-size:12.5px}
+.shell .seg button{min-height:34px;padding:0 12px;font-size:13px}
+.shell .check{min-height:30px}
+.shell .side{flex:0 0 210px;padding:10px 8px}
+.shell .side a{padding:7px 10px;min-height:34px;font-size:14px}
+.shell .side .grp{margin:10px 8px 2px;font-size:11px}
+.shell .side .dis{padding:6px 10px;font-size:13px}
+.shell .main{padding:14px 18px 60px}
+.shell .banner{padding:7px 12px;margin-bottom:10px;border-radius:10px;font-size:13px}
+.shell .page-head{margin-bottom:10px;align-items:center}
+.shell .page-head h1{font-size:20px}
+.shell .page-head p{margin:2px 0 0;font-size:12.5px}
+.shell .card{padding:14px;border-radius:10px}
+.shell .card+.card{margin-top:10px}
+.shell .card h3{font-size:15px;margin-bottom:8px}
+.shell .grid2{gap:10px}
+.shell .stats{gap:10px;margin-bottom:10px}
+.shell .stat{padding:10px 14px}.shell .stat .n{font-size:24px}
+.shell table.tbl{font-size:13px}
+.shell .tbl th,.shell .tbl td{padding:6px 10px}
+.card-tight{padding:12px 14px}
+.sm{font-size:12px}
+.grow{flex:1;min-width:0}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:900px){.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.grid3{grid-template-columns:1fr}}
+.input-sm{min-height:32px!important}
+/* toolbar + selectable tables */
+.toolbar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px 8px;margin-bottom:8px}
+.tb-sep{width:1px;height:22px;background:var(--line);margin:0 4px}
+.tb-hint{margin-inline-start:auto;font-size:12px;color:var(--muted)}
+.tbl-sel tbody tr{cursor:pointer}
+.tbl-sel tbody tr:hover{background:#F7F9FC}
+.tbl-sel tbody tr.on{background:#E8EEF8}
+.w-chk{width:38px}
+.tbl-sel input[type=checkbox]{width:16px;height:16px;accent-color:var(--primary);cursor:pointer}
+.shell .pill{padding:1px 8px;font-size:11.5px}
+/* school settings */
+.settings-card{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+.settings-logo{display:flex;flex-direction:column;align-items:center;gap:6px;width:150px}
+.settings-logo .logo-box{width:96px;height:96px}
+/* periods */
+.pset{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end}
+.daypick{display:flex;gap:4px;flex-wrap:wrap}
+.daypick button{display:inline-flex;align-items:center;gap:4px;min-height:34px;padding:0 10px;border:1px solid var(--line2);border-radius:8px;background:#fff;cursor:pointer;font-size:13px;color:var(--muted)}
+.daypick button[aria-pressed=true]{background:var(--primary);border-color:var(--primary);color:#fff;font-weight:600}
+.ptotal{display:flex;flex-direction:column;align-items:center;margin-inline-start:auto;padding:2px 12px;border-radius:8px;background:var(--accent-soft);border:1px solid #F3D7A3}
+.ptotal span{font-size:11px;color:var(--muted)}.ptotal b{font-size:20px;color:#D35400}
+.shell .days{grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-top:10px}
+.shell .day{padding:8px 10px;border-radius:10px}
+.day-head{display:flex;justify-content:space-between;align-items:center}
+.shell .day h4{margin:0;font-size:14px}
+.shell .stepper{margin:4px 0;gap:4px}.shell .stepper b{font-size:17px;min-width:22px}
+.shell .plist{display:block;width:100%;border:0;background:none;padding:4px 0 0;cursor:pointer;text-align:start;font-size:12px;line-height:1.75;border-top:1px dashed var(--line)}
+.plist>div{display:flex;justify-content:space-between;gap:6px}
+.plist>div:hover{color:var(--primary)}
+.plist .custom-tag{display:block;font-size:10.5px;color:var(--primary);margin-top:2px}
+.times-tbl .input{min-height:32px}
+.times-tbl .brk-row td{background:var(--warn-soft)}
 </style>
 </head>
 <body>
