@@ -639,11 +639,28 @@ h1,h2,h3,.page-head h1,.dlist-head b,.dstat .dl{font-family:var(--head)}
 /* dashboard list: one vertical column */
 .dlist ul{columns:auto;display:flex;flex-direction:column;gap:6px;max-width:760px}
 .dlist li{margin-bottom:0}
+/* dashboard: each list drops under its own card */
+.dstats{align-items:start}
+.dcol{display:flex;flex-direction:column;gap:0;min-width:0}
+.dcol .dstat{width:100%}
+.dcol .dstat.on{border-end-start-radius:6px;border-end-end-radius:6px;outline:0}
+.dcol .dlist{background:#fff;border:1px solid #E1E6EF;border-top:5px solid;border-radius:0 0 16px 16px;margin:0 8px;padding:12px;box-shadow:var(--sh2);animation:dropin .18s ease-out}
+.dcol .dlist-grades{border-top-color:#3B82F6}.dcol .dlist-subjects{border-top-color:#10B981}.dcol .dlist-teachers{border-top-color:#FB923C}
+@keyframes dropin{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.dcol .dlist ul{max-width:none}
+.dcol .dlist li{min-height:48px}
+.dcol .dlist .dname{font-size:17px}
+.dadd{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;margin-bottom:10px;border:2px dashed;border-radius:12px;background:transparent;font:inherit;font-family:var(--head);font-size:19px;font-weight:800;cursor:pointer}
+.dlist-grades .dadd{color:#1E3A8A;border-color:#93B4F5;background:#F2F6FF}
+.dlist-subjects .dadd{color:#047857;border-color:#86DDB9;background:#EFFBF5}
+.dlist-teachers .dadd{color:#C2410C;border-color:#FDC08C;background:#FFF6EE}
+.dadd:hover{filter:brightness(.97)}
+.dmore{display:block;text-align:center;margin-top:8px;font-size:14px;font-weight:600;text-decoration:none}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794933530"></script>
+<script src="app.js?v=1794933724"></script>
 </body>
 </html>
