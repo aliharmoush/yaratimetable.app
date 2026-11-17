@@ -440,11 +440,35 @@ table.whole{border-collapse:collapse;font-size:11px;min-width:100%}
 }
 .wcard{position:relative}
 .wcard .pin{position:absolute;top:-3px;inset-inline-end:-2px;font-size:9px;text-shadow:none}
+/* special reports */
+.rpage-sheet{aspect-ratio:auto!important;min-height:auto}
+.rmaster{font-size:9px}.rmaster th.n{font-size:8px;font-weight:600}.rmaster td{padding:0;height:18px}.rmaster td.de{border-inline-end:2.5px solid #222}
+.rmaster th.nm,.rlist th.nm{text-align:start;white-space:nowrap;padding:2px 6px;font-size:11px}
+.rlist td{padding:4px 6px;font-size:11.5px}.rlist td small{color:#555}
+.rlist .gapx{color:#B42318;font-size:10px}.rlist .offday{color:#888;font-size:10px}
+.rlist .sign-row td,.rlist .sign-row th{height:34px}.rlist td.subs{font-size:10.5px;text-align:start}
+/* daily cover */
+.sb-top{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start;margin-bottom:10px}
+.pk.abs{background:var(--err-soft);border-color:var(--err);color:var(--err)}
+.sb-sheet{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px}
+.sb-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.sb-head img{height:40px}.sb-head>div{text-align:center;display:flex;flex-direction:column}
+.sb-head small{color:var(--muted)}.sb-head b{font-size:18px;color:var(--navy)}
+.sb-tbl .as-sel{min-width:260px}
+.sb-foot{display:flex;justify-content:space-between;margin-top:14px;font-size:12px;color:#444}
+.print-only{display:none}
+@media print{
+  .print-only{display:table-cell}
+  span.print-only{display:inline}
+  .sb-sheet{border:0;padding:0}
+  .sb-tbl{font-size:12px}.sb-tbl td,.sb-tbl th{border:1.2px solid #222!important}
+  .sb-sign{min-width:110px}
+}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794909725"></script>
+<script src="app.js?v=1794909999"></script>
 </body>
 </html>
