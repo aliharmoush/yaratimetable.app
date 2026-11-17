@@ -472,11 +472,33 @@ table.whole{border-collapse:collapse;font-size:11px;min-width:100%}
 .xl-backup{margin-bottom:10px!important;background:var(--ok-soft);border-color:#CFE6D8}
 .demo-btn{min-height:46px;border-style:dashed}
 .demo-banner{background:#EEF2FA;border-color:#C9D9F0}
+.xl-hero{background:#fff;border:2px solid var(--primary);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+.xl-hero-t{display:flex;flex-direction:column;margin-bottom:8px}.xl-hero-t b{font-size:18px;color:var(--navy)}.xl-hero-t span{color:var(--muted);font-size:13px}
+.xl-hero ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;counter-reset:s}
+.xl-hero li{counter-increment:s;display:flex;flex-direction:column;gap:6px;align-items:flex-start;background:#F7F9FC;border-radius:10px;padding:10px 12px}
+.xl-hero li::before{content:counter(s);width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--navy);font-weight:800;display:flex;align-items:center;justify-content:center}
+.xl-adv{margin-bottom:10px}.xl-adv summary{cursor:pointer;color:var(--primary);font-size:13px;margin:4px 0 8px}
+/* bigger, clearer sidebar */
+.shell .side{flex:0 0 250px;padding:12px 10px}
+.shell .side a{padding:10px 14px;min-height:44px;font-size:16.5px;font-weight:600;gap:10px}
+.shell .side a svg{width:20px;height:20px}
+.shell .side .grp{margin:14px 10px 4px;font-size:12.5px;font-weight:700}
+/* big red generate */
+.btn.btn-generate{background:#D92D20;border-color:#D92D20;color:#fff;font-size:17px;font-weight:800;padding:10px 22px;min-height:46px;border-radius:10px;box-shadow:0 4px 12px rgba(217,45,32,.3)}
+.btn.btn-generate:hover:not(:disabled){background:#B42318;border-color:#B42318}
+.btn.btn-generate svg{width:22px;height:22px}
+/* reports */
+.rp-kind{display:flex;align-items:center;gap:8px;font-weight:700}
+.rp-kind select{min-width:220px;font-size:15px;font-weight:600;padding:8px 10px;height:auto}
+.banner-warn{background:var(--warn-soft);color:var(--warn);border:1px solid #F3D9A4}
+.per-4 .rtbl td{overflow:hidden}
+.per-4 .rtbl td .m,.per-4 .rtbl td small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.rp-kind span{white-space:nowrap}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794911516"></script>
+<script src="app.js?v=1794913835"></script>
 </body>
 </html>
