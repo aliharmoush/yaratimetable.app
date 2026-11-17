@@ -636,11 +636,14 @@ h1,h2,h3,.page-head h1,.dlist-head b,.dstat .dl{font-family:var(--head)}
 .dlist-head b{font-size:21px}
 .dlist ul{display:block;columns:3 300px;column-gap:8px}
 .dlist li{break-inside:avoid;margin-bottom:6px}
+/* dashboard list: one vertical column */
+.dlist ul{columns:auto;display:flex;flex-direction:column;gap:6px;max-width:760px}
+.dlist li{margin-bottom:0}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794933326"></script>
+<script src="app.js?v=1794933530"></script>
 </body>
 </html>
