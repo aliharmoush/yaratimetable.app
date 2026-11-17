@@ -656,11 +656,58 @@ h1,h2,h3,.page-head h1,.dlist-head b,.dstat .dl{font-family:var(--head)}
 .dlist-teachers .dadd{color:#C2410C;border-color:#FDC08C;background:#FFF6EE}
 .dadd:hover{filter:brightness(.97)}
 .dmore{display:block;text-align:center;margin-top:8px;font-size:14px;font-weight:600;text-decoration:none}
+/* dashboard hub — stages */
+.dstage{margin-bottom:18px}
+.dst-h{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:800;color:var(--brand1);margin:4px 2px 10px}
+.dst-n{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#FFB84D,#F5A524);color:#2A1A00;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-size:16px}
+.dstats{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.dstat-settings{background:linear-gradient(135deg,#0369A1,#38BDF8)}
+.dstat-periods{background:linear-gradient(135deg,#0F766E,#2DD4BF)}
+.dstat-assign{background:linear-gradient(135deg,#BE185D,#F472B6)}
+.dstat-timetable{background:linear-gradient(135deg,#B91C1C,#F87171)}
+.dstat-reports{background:linear-gradient(135deg,#6D28D9,#A78BFA)}
+.dstat-subs{background:linear-gradient(135deg,#A16207,#FACC15)}
+.dcol .dlist-settings{border-top-color:#38BDF8}.dcol .dlist-periods{border-top-color:#2DD4BF}.dcol .dlist-assign{border-top-color:#F472B6}
+.dcol .dlist-timetable{border-top-color:#F87171}.dcol .dlist-reports{border-top-color:#A78BFA}.dcol .dlist-subs{border-top-color:#FACC15}
+.dch{display:flex;align-items:center;gap:8px}
+.dok,.dbad{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800}
+.dok{background:#fff;color:#16A34A}.dbad{background:#FEF3C7;color:#B45309}
+.dcol{position:relative}
+.is-next .dstat{box-shadow:0 0 0 4px #FFD27A,0 10px 26px rgba(16,24,40,.18);animation:nextglow 2s ease-in-out infinite}
+@keyframes nextglow{0%,100%{box-shadow:0 0 0 3px #FFD27A,0 10px 26px rgba(16,24,40,.16)}50%{box-shadow:0 0 0 6px #FFC94D,0 10px 26px rgba(16,24,40,.2)}}
+.dnext{position:absolute;top:-11px;inset-inline-start:16px;z-index:2;background:#FFB84D;color:#2A1A00;font-size:12.5px;font-weight:800;border-radius:20px;padding:2px 12px;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.dwarnbar{margin:0 10px;border:1px solid #F7D9A0;border-top:0;background:#FFF8E6;color:#92400E;font:inherit;font-weight:700;font-size:14px;text-align:start;padding:7px 12px;border-radius:0 0 12px 12px;cursor:pointer}
+.dwarn{background:#FFF8E6;color:#92400E;border:1px solid #F7D9A0;border-radius:10px;padding:8px 12px;font-weight:700;margin:0 0 10px}
+.dbody ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.dgo{display:flex;align-items:center;justify-content:center;gap:8px;min-height:46px;margin-top:8px;border-radius:12px;border:1px solid #D8DFEB;background:#fff;font-weight:800;font-size:16px;text-decoration:none;color:var(--brand2)}
+.dgo:hover{background:#F5F8FD}
+.dgo-xl{background:linear-gradient(135deg,#1E3F7A,#2C5BB0);color:#fff;border:0;box-shadow:0 4px 12px rgba(30,63,122,.25)}
+.dgo-xl:hover{background:linear-gradient(135deg,#17325F,#244C96);color:#fff}
+.dgen{width:100%;margin-top:8px;animation:none!important}
+.dschool{display:flex;align-items:center;gap:12px;padding:6px 0 10px}
+.dschool img{width:64px;height:64px;object-fit:contain;border-radius:12px;border:1px solid var(--line);background:#fff}
+.dschool .nologo{width:64px;height:64px;border-radius:12px;border:2px dashed #CBD5E1;display:flex;align-items:center;justify-content:center;color:#94A3B8}
+.dschool b{font-size:18px;font-family:var(--head)}
+.dshift+.dshift{margin-top:12px}
+.dsh{display:block;font-size:16px;margin-bottom:4px}
+.ddays{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px}.ddays .pill{font-size:14px}
+table.dbell{width:100%;border-collapse:collapse;font-size:15px}
+.dbell td{padding:6px 10px;border-bottom:1px solid #EEF1F6}
+.dbell td:last-child{text-align:end;font-family:'Space Grotesk',sans-serif;font-weight:600}
+.dbell tr.brk td{background:#FFF8E6;color:#92400E;font-weight:700}
+.dnums{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.dnums span{display:flex;flex-direction:column;align-items:center;background:#F3F7FD;border-radius:12px;padding:10px;font-size:14px;font-weight:600;color:#475569}
+.dnums b{font-size:28px;font-family:'Space Grotesk',sans-serif;color:var(--brand1)}
+.dnums .bad{background:#FEF2F2}.dnums .bad b{color:#DC2626}
+.dmiss{margin-bottom:6px!important}.dmiss li{font-size:15px;padding:6px 10px;border-radius:8px;background:#FFF7F7;border:1px solid #FDE2E2}
+.dline{font-size:16px;margin:0 0 8px}.dline .ok{color:#15803D;font-weight:700}
+.dlink{cursor:pointer;color:var(--brand2)}.dlink:hover{background:#F5F3FF!important;border-color:#C4B5FD!important}
+.dstat .dl{font-size:22px}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794933724"></script>
+<script src="app.js?v=1794934254"></script>
 </body>
 </html>
