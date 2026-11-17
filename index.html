@@ -623,11 +623,24 @@ h1,h2,h3,.page-head h1,.dlist-head b,.dstat .dl{font-family:var(--head)}
 /* mobile bottom bar */
 .bottombar{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .shell .side-school svg{stroke:var(--amber)!important}
+/* dashboard cards v3: label on top, number under */
+.dstat{align-items:center;padding:18px 20px}
+.dstat .dl{font-size:24px;font-weight:800;gap:2px;line-height:1.35}
+.dstat .dn{display:flex;align-items:baseline;gap:10px;font-family:'Space Grotesk',sans-serif;font-size:40px;font-weight:700;line-height:1.1}
+.dstat .dn small{font-family:var(--head);font-size:16px;font-weight:700;opacity:.92}
+.dstat .dic{width:56px;height:56px;border-radius:14px}
+.dlist .dname{font-size:18px}
+.dlist li{min-height:54px;padding:9px 12px}
+.dlist li small{font-size:14px}
+.dlist .pill{font-size:14px;padding:2px 10px}
+.dlist-head b{font-size:21px}
+.dlist ul{display:block;columns:3 300px;column-gap:8px}
+.dlist li{break-inside:avoid;margin-bottom:6px}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794932601"></script>
+<script src="app.js?v=1794933326"></script>
 </body>
 </html>
