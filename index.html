@@ -412,11 +412,19 @@ table.whole{border-collapse:collapse;font-size:11px;min-width:100%}
 .pk{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line2);border-radius:20px;padding:3px 10px 3px 8px;font-size:13px;cursor:pointer;background:#fff}
 .pk.on{background:#E8EEF8;border-color:var(--primary);color:var(--primary);font-weight:600}
 .pk input{accent-color:var(--primary)}
+.pg-grid th button small{display:block;font-size:9.5px;font-weight:500;color:var(--muted);margin-top:1px}
+.pg-grid thead th button{min-width:62px}
+.pg-grid tbody th button{min-width:86px;text-align:start}
+.pg-grid tbody th button[aria-pressed=true]{background:var(--primary);color:#fff}
+.pg-grid tr.pg-off td button.off{opacity:.45}
+.pg-grid .pg-cnt{text-align:center;font-size:12px;color:var(--muted);min-width:50px}
+.pg-grid td.pg-cnt b{font-size:16px;color:var(--ink)}
+.pg-custom{color:var(--primary);background:#E8EEF8}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794907763"></script>
+<script src="app.js?v=1794908055"></script>
 </body>
 </html>
