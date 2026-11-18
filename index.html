@@ -770,11 +770,72 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 .stype{font-size:13px;font-weight:700;background:rgba(255,255,255,.22);border-radius:999px;padding:2px 10px;margin-inline-start:6px;vertical-align:middle}
 .shell .main:has(.scard){padding-top:12px}
 .shell .main:has(.scard) .page-head{margin-bottom:10px}
+
+/* ============ FIT-TO-SCREEN + PAGE COLORS (all pages) ============ */
+@media (min-width:901px){
+  .shell{height:100vh;min-height:0;overflow:hidden}
+  .shell>.body{flex:1;min-height:0;display:flex}
+  .shell .side{height:100%;overflow-y:auto;scrollbar-width:thin;padding:8px 10px}
+  .shell .main{flex:1;min-width:0;height:100%;overflow-y:auto;padding:10px 18px 14px}
+}
+/* sidebar compact but readable */
+.shell .side-school{padding:4px 6px 8px;margin-bottom:4px}
+.shell .side-school img{width:36px;height:36px}
+.shell .side .grp{margin:8px 10px 2px;font-size:11.5px}
+.shell .side a.nv{min-height:38px;padding:4px 8px;font-size:15.5px;gap:10px;border-radius:10px}
+.nvi{width:28px;height:28px;flex-basis:28px;border-radius:8px}
+.shell .side-logout{min-height:36px;margin-top:6px}
+/* page header compact */
+.shell .main .page-head{margin-bottom:8px;padding-inline-start:12px}
+.shell .main .page-head h1{font-size:23px;line-height:1.25}
+.shell .main .page-head p{font-size:13.5px;margin-top:0}
+.shell .main .page-head::before{background:var(--acc,#F5A524);width:6px}
+/* base type bigger */
+.shell .main{font-size:15px}
+.shell table.tbl{font-size:15px}
+.shell .tbl th{font-size:14px;padding:7px 10px}
+.shell .tbl td{padding:6px 10px}
+.shell .btn{font-size:15px}
+.shell .btn-sm{font-size:14px}
+.shell .field label{font-size:14px}
+.shell .banner{font-size:14px;padding:6px 12px;margin-bottom:8px}
+.shell .card{padding:12px 14px}
+.shell .toolbar{padding:6px 8px;margin-bottom:8px}
+/* page accent colors — same as the sidebar icons */
+.pg-dashboard{--acc:#7C3AED;--acc-s:#F3EEFF}
+.pg-settings{--acc:#0284C7;--acc-s:#E8F5FD}
+.pg-periods{--acc:#0F766E;--acc-s:#E7F8F5}
+.pg-grades{--acc:#2563EB;--acc-s:#EAF1FF}
+.pg-subjects{--acc:#16A34A;--acc-s:#EAF8EF}
+.pg-teachers{--acc:#EA580C;--acc-s:#FFF1E8}
+.pg-excel{--acc:#15803D;--acc-s:#E9F7EE}
+.pg-assign{--acc:#DB2777;--acc-s:#FDEDF5}
+.pg-timetable{--acc:#DC2626;--acc-s:#FDEEEE}
+.pg-reports{--acc:#7C3AED;--acc-s:#F3EEFF}
+.pg-subs{--acc:#CA8A04;--acc-s:#FEF8E6}
+.pg-owner{--acc:#475569;--acc-s:#F1F5F9}
+.shell .main .page-head h1{color:var(--acc,#0E1F3D)}
+.shell .main .tbl th{background:var(--acc-s,#F5F8FD);color:#1F2A44;border-bottom:2px solid var(--acc,#CBD5E1)}
+.shell .main .tbl-wrap,.shell .main .toolbar,.shell .main>.card{border-top:3px solid var(--acc,#E1E6EF)}
+.shell .main .seg button[aria-pressed=true]{color:var(--acc,#1E3F7A)}
+.shell .main .btn-primary:not(.btn-generate){background:var(--acc,#1E3F7A);box-shadow:0 3px 10px color-mix(in srgb,var(--acc,#1E3F7A) 35%,transparent)}
+.shell .main .btn-primary:not(.btn-generate):hover{filter:brightness(.92)}
+/* tables scroll inside, page stays fixed */
+@media (min-width:901px){
+  .shell .main .tbl-wrap thead th{position:sticky;top:0;z-index:2}
+  .shell .main .whole thead th{position:sticky;top:0;z-index:3}
+  .shell .main .whole thead tr:nth-child(2) th{top:24px}
+}
+
+.shell .side a.nv{min-height:36px;padding:3px 8px}
+.shell .side .grp{margin:6px 10px 1px}
+.shell .side-school .nm{font-size:14px}
+@media (min-width:901px){.shell .main .to-grid td button{height:36px}.shell .main .to-grid td{padding:2px 3px}}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794977320"></script>
+<script src="app.js?v=1794977687"></script>
 </body>
 </html>
