@@ -703,11 +703,46 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 .dline{font-size:16px;margin:0 0 8px}.dline .ok{color:#15803D;font-weight:700}
 .dlink{cursor:pointer;color:var(--brand2)}.dlink:hover{background:#F5F3FF!important;border-color:#C4B5FD!important}
 .dstat .dl{font-size:22px}
+/* school settings — colored sections, bigger type */
+.scard{background:#fff;border:1px solid #E1E6EF;border-radius:18px;box-shadow:var(--sh1);padding:0 0 18px;margin-bottom:16px;overflow:hidden}
+.scard>header{display:flex;align-items:center;gap:12px;padding:14px 20px;margin-bottom:14px;color:#fff}
+.scard>header h2{flex:1;margin:0;font-family:var(--head);font-size:21px;font-weight:800;color:#fff}
+.scard>header .btn{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);box-shadow:none;color:#fff}
+.scard>header .btn:disabled{opacity:.6}
+.scard>*:not(header){margin-inline:20px}
+.sic{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center}
+.scard-id>header{background:linear-gradient(135deg,#1E3A8A,#3B82F6)}
+.scard-time>header{background:linear-gradient(135deg,#0F766E,#2DD4BF)}
+.scard-rooms>header{background:linear-gradient(135deg,#6D28D9,#A78BFA)}
+.shint{color:#5B6B87;font-size:14.5px;margin-top:0;margin-bottom:12px}
+.sid{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap}
+.slogos{display:flex;flex-direction:column;gap:12px;width:200px}
+.slogo{display:flex;flex-direction:column;align-items:center;gap:6px;background:#F5F8FD;border:1px solid #E3E9F3;border-radius:14px;padding:10px}
+.slab{font-weight:700;font-size:14.5px;color:#24365C}
+.slogo .logo-box{width:96px;height:96px;border-radius:14px;background:#fff;border:2px dashed #C7D2E3;display:flex;align-items:center;justify-content:center;color:#94A3B8;overflow:hidden}
+.slogo .logo-box img{width:100%;height:100%;object-fit:contain}
+.sfields{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px 18px;min-width:280px}
+.sfield{display:flex;flex-direction:column;gap:6px}
+.sfield-wide{grid-column:1/-1}
+.sfield label{font-size:15.5px;font-weight:700;color:#24365C}
+.scard .input,.scard select.input{font-size:16.5px;min-height:46px;padding:8px 12px}
+.scard .input.sbig{font-size:21px;font-weight:700;font-family:var(--head);min-height:52px}
+.scard .seg button{font-size:16px;min-height:40px}
+.sout{min-height:46px;display:flex;align-items:center;padding:0 12px;background:#F3F6FB;border-radius:10px;font-size:17px;font-weight:700;color:#24365C}
+.sgrid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px 16px}
+.sdays{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.sdays button{min-height:44px;min-width:92px;border-radius:12px;border:2px solid #D3DBE8;background:#fff;font:inherit;font-size:16px;font-weight:700;color:#5B6B87;cursor:pointer}
+.sdays button[aria-pressed=true]{background:linear-gradient(135deg,#0F766E,#14B8A6);border-color:#0F766E;color:#fff;box-shadow:0 3px 10px rgba(15,118,110,.3)}
+.sshift+.sshift{border-top:1px dashed #D3DBE8;padding-top:14px;margin-top:14px}
+.sshift h3{font-family:var(--head);font-size:18px;margin:0 0 10px;color:#0F766E}
+.ssum{margin-top:12px;display:inline-block;background:#ECFDF5;color:#065F46;border-radius:999px;padding:5px 14px;font-weight:700;font-size:15px}
+.scard-rooms .sgrid4 input{max-width:none}
+.scard .field label{font-size:15.5px;font-weight:700;color:#24365C}.scard .field .input{width:100%}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794934254"></script>
+<script src="app.js?v=1794977081"></script>
 </body>
 </html>
