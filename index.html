@@ -866,11 +866,26 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 .ls-joint{margin-top:8px;padding:8px;background:#F5F8FD;border-radius:10px}
 .dclick{cursor:pointer}
 .dcount{min-width:36px;text-align:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;background:#F1F5F9;border-radius:8px;padding:2px 6px}
+/* === labels & section titles: centered, bigger, colored (all screens) === */
+.shell .field>label,.shell .sfield>label,.shell .ls-box label,.modal .field>label{display:block;text-align:center;font-size:15.5px;font-weight:800;color:var(--acc,#1E3F7A);margin-bottom:4px}
+.modal .field>label{color:#1E3F7A}
+.ls-teacher label{color:#C2410C!important}.ls-subject label{color:#15803D!important}.ls-class label{color:#1D4ED8!important}.ls-count label{color:#6D28D9!important}
+.scard>header{justify-content:center;position:relative;min-height:48px}
+.scard>header .sic{position:absolute;inset-inline-start:14px}
+.scard>header h2{flex:0 1 auto;text-align:center;font-size:21px;letter-spacing:.2px}
+.shell .main .card>h3,.shell .main .card>.row>h3{text-align:center;font-size:19px;width:100%}
+.modal-head h2{text-align:center;flex:1;font-size:20px}
+.scard-id .sfield>label{color:#1D4ED8}.scard-time .sfield>label{color:#0F766E}.scard-rooms .field>label{color:#6D28D9}
+.scard .input{text-align:center}
+.scard .input.sbig{text-align:center}
+/* days: warm amber when on */
+.sdays button[aria-pressed=true]{background:linear-gradient(135deg,#F59E0B,#FBBF24);border-color:#D97706;color:#3B2300;box-shadow:0 3px 10px rgba(217,119,6,.35)}
+.sdays button[aria-pressed=false]{background:#F8FAFC;color:#94A3B8;border-style:dashed}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794978392"></script>
+<script src="app.js?v=1794996252"></script>
 </body>
 </html>
