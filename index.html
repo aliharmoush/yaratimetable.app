@@ -738,11 +738,43 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 .ssum{margin-top:12px;display:inline-block;background:#ECFDF5;color:#065F46;border-radius:999px;padding:5px 14px;font-weight:700;font-size:15px}
 .scard-rooms .sgrid4 input{max-width:none}
 .scard .field label{font-size:15.5px;font-weight:700;color:#24365C}.scard .field .input{width:100%}
+/* settings: compact, fits one screen */
+.scard{margin-bottom:10px;padding-bottom:12px;border-radius:14px}
+.scard>header{padding:8px 14px;margin-bottom:10px;gap:10px}
+.scard>header h2{font-size:17.5px}
+.scard>*:not(header){margin-inline:14px}
+.sic{width:32px;height:32px;border-radius:9px}
+.scard>header .btn{min-height:32px;padding:0 12px}
+.sid{gap:14px}
+.slogo{padding:6px 8px;gap:4px;width:150px}
+.slogo .logo-box{width:66px;height:66px;border-radius:12px}
+.sfields{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 12px}
+.sfield-wide{grid-column:span 2}
+.sfield{gap:3px}
+.sfield label,.scard .field label{font-size:14px}
+.scard .input,.scard select.input{font-size:15px;min-height:38px;padding:5px 10px}
+.scard .input.sbig{font-size:17px;min-height:38px}
+.sout{min-height:38px;font-size:15px}
+.scard .seg button{font-size:14.5px;min-height:32px}
+.sduo{display:grid;grid-template-columns:2fr 1fr;gap:10px;align-items:start}
+@media (max-width:1100px){.sduo{grid-template-columns:1fr}.sfields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.sdays{gap:5px;margin-bottom:8px}
+.sdays button{min-height:36px;min-width:0;flex:1;font-size:14.5px;border-radius:10px}
+.sgrid4{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 12px}
+.sshift+.sshift{padding-top:10px;margin-top:10px}
+.sshift h3{font-size:16px;margin-bottom:6px}
+.ssum{margin:0;padding:4px 12px;font-size:14px}
+.scard-rooms .sgrid4{grid-template-columns:repeat(2,minmax(0,1fr))}
+.scard-rooms .shint{font-size:13px;margin-bottom:8px}
+.scard .field{margin:0}
+.stype{font-size:13px;font-weight:700;background:rgba(255,255,255,.22);border-radius:999px;padding:2px 10px;margin-inline-start:6px;vertical-align:middle}
+.shell .main:has(.scard){padding-top:12px}
+.shell .main:has(.scard) .page-head{margin-bottom:10px}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794977081"></script>
+<script src="app.js?v=1794977320"></script>
 </body>
 </html>
