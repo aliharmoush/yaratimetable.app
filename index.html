@@ -1004,11 +1004,64 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 .scard>header{min-height:40px;padding:4px 14px;margin-bottom:8px}.scard{margin-bottom:6px;padding-bottom:8px}.sfields{row-gap:4px}.slogo .logo-box{width:56px;height:56px}
 .sbreak .sbmin{width:56px}.sbreak select.input{flex-basis:52px;width:52px}
 .shell .side a.nv-assign .nvt{font-size:14px;white-space:nowrap;letter-spacing:-.2px}
+/* === colored toolbar buttons (all pages) === */
+.shell .toolbar .btn-ghost[data-ic]{border-width:1.5px;font-weight:800}
+.shell .toolbar .btn-ghost[data-ic=eye]{color:#7C3AED;border-color:#DDD0FB;background:#F7F3FF}
+.shell .toolbar .btn-ghost[data-ic=edit]{color:#2563EB;border-color:#C9DAFB;background:#F2F6FF}
+.shell .toolbar .btn-ghost[data-ic=trash]{color:#DC2626;border-color:#F7C8C8;background:#FFF4F4}
+.shell .toolbar .btn-ghost[data-ic=clock]{color:#0F766E;border-color:#BFE7E1;background:#F0FBF9}
+.shell .toolbar .btn-ghost[data-ic=table]{color:#B45309;border-color:#F6DDB0;background:#FFF9EE}
+.shell .toolbar .btn-ghost[data-ic=plus]{color:#059669;border-color:#BDEBD8;background:#F0FCF7}
+.shell .toolbar .btn-ghost[data-ic=layers]{color:#DB2777;border-color:#F8CDE1;background:#FFF3F8}
+.shell .toolbar .btn-ghost[data-ic]:hover:not(:disabled){filter:brightness(.96)}
+.shell .toolbar .btn-ghost[data-ic]:disabled{opacity:.55}
+/* teachers */
+.tc-row td:nth-child(2){box-shadow:inset -5px 0 0 var(--tcc)}
+.tc-name{color:var(--tcc)!important;font-family:var(--head);font-weight:800;font-size:16px;text-decoration:none!important;border:0!important}
+.tc-subs{display:flex;flex-wrap:wrap;gap:5px}
+.tc-sub{display:inline-flex;align-items:center;gap:5px;background:var(--c);color:#fff;border-radius:9px;padding:3px 10px;font-size:14.5px;font-weight:800;text-shadow:0 1px 1px rgba(0,0,0,.25)}
+.tc-sub b{background:rgba(255,255,255,.3);border-radius:6px;padding:0 6px;font-family:'Space Grotesk',sans-serif}
+.tc-load{display:inline-flex;min-width:42px;height:30px;align-items:center;justify-content:center;border-radius:9px;background:#FFF1E8;color:#C2410C;font-family:'Space Grotesk',sans-serif;font-size:18px}
+.tc-load.over{background:#FDECEA;color:#B42318}
+/* assign page */
+.shell .as-tbl{font-size:16px}
+.shell .as-tbl th{font-size:15.5px!important;font-weight:800}
+.as-subj{width:1%;white-space:nowrap}
+.as-n{width:1%;white-space:nowrap}
+.as-n b{display:inline-flex;min-width:38px;height:30px;align-items:center;justify-content:center;border-radius:9px;background:#FDEDF5;color:#BE185D;font-family:'Space Grotesk',sans-serif;font-size:18px}
+.as-chip{display:inline-block;background:var(--c);color:#fff;border-radius:9px;padding:4px 12px;font-weight:800;font-size:15.5px;text-shadow:0 1px 1px rgba(0,0,0,.25)}
+.as-multi{display:inline-flex;align-items:center;gap:3px;margin-inline-start:6px;border:1.5px dashed #F472B6;background:#fff;color:#BE185D;border-radius:8px;padding:2px 8px;font:inherit;font-size:12.5px;font-weight:800;cursor:pointer;vertical-align:middle}
+.as-multi:hover{background:#FDF2F8}
+.shell .as-tbl select.as-sel{font-size:15px;min-height:36px}
+.shell .as-grades{gap:5px}
+.shell .as-grades button{font-size:16px;font-weight:800;min-height:40px;border-radius:10px;color:var(--gc,#1E3A8A);border:1.5px solid color-mix(in srgb,var(--gc,#2563EB) 30%,#fff);background:color-mix(in srgb,var(--gc,#2563EB) 6%,#fff);border-inline-start:5px solid var(--gc,#2563EB)}
+.shell .as-grades button[aria-pressed=true]{background:var(--gc,#2563EB);color:#fff;box-shadow:0 4px 12px color-mix(in srgb,var(--gc,#2563EB) 35%,transparent)}
+.shell .as-grades button .ok{color:inherit}
+.mu-top{display:flex;flex-direction:column;align-items:center;gap:4px;margin-bottom:6px}
+.mu-top label{font-weight:800;color:#C2410C}
+.mu-top select{max-width:360px;width:100%;font-size:16px}
+.mu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:6px;max-height:46vh;overflow:auto}
+.mu-c{display:grid;grid-template-columns:auto 1fr auto;grid-template-rows:auto auto;align-items:center;column-gap:8px;border:1.5px solid color-mix(in srgb,var(--gc) 30%,#fff);border-inline-start:5px solid var(--gc);border-radius:10px;padding:6px 10px;cursor:pointer;background:#fff}
+.mu-c.on{background:color-mix(in srgb,var(--gc) 10%,#fff)}
+.mu-c input{grid-row:1/3}
+.mu-n{font-weight:800;color:var(--gc);font-size:15.5px}
+.mu-p{font-family:'Space Grotesk',sans-serif;font-size:17px}
+.mu-c small{grid-column:2/4;color:#64748B;font-size:12.5px}
+.mu-sum{text-align:center;margin-top:8px;font-weight:800;color:#BE185D}
+/* lesson dialog: other classes */
+.ls-more{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:5px;margin-top:6px;max-height:180px;overflow:auto}
+.ls-mo{border:1.5px solid #D6E2FB;border-radius:9px;padding:4px 8px;background:#fff;font-weight:700}
+.ls-mo.on{background:#EAF1FF;border-color:#2563EB}
+.ls-mo.mine{background:#ECFDF5;border-color:#10B981;opacity:.85}
+.ls-mo b{margin-inline-start:auto;font-family:'Space Grotesk',sans-serif;color:#1D4ED8}
+.ls-mo{display:flex;align-items:center;gap:6px}
+.shell .as-grades{flex:0 0 150px;width:150px}
+.shell .as-grades button{white-space:nowrap;font-size:15px;justify-content:space-between}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795097701"></script>
+<script src="app.js?v=1795098928"></script>
 </body>
 </html>
