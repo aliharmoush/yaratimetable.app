@@ -882,11 +882,42 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 .sdays button[aria-pressed=true]{background:linear-gradient(135deg,#F59E0B,#FBBF24);border-color:#D97706;color:#3B2300;box-shadow:0 3px 10px rgba(217,119,6,.35)}
 .sdays button[aria-pressed=false]{background:#F8FAFC;color:#94A3B8;border-style:dashed}
 .modal-head h3{flex:1;text-align:center;font-family:var(--head);font-size:20px;font-weight:800;color:#0E1F3D}
+/* === picker (choose grades / subjects): centered, bigger, colored === */
+.shell .picker{padding:0 0 10px;overflow:hidden;border-top:0!important}
+.shell .picker-head{justify-content:center;position:relative;background:linear-gradient(135deg,var(--acc,#2563EB),color-mix(in srgb,var(--acc,#2563EB) 60%,#fff));padding:10px 14px;color:#fff;min-height:52px}
+.shell .picker-toggle{color:#fff;font-size:19px;font-family:var(--head);font-weight:800}
+.shell .picker-toggle .muted{color:rgba(255,255,255,.85)!important;font-size:14px}
+.shell .picker-head>span[style*="flex: 1"]{display:none}
+.shell .picker-head>.sm{position:absolute;inset-inline-start:14px;color:#FFF3C4!important;font-weight:700}
+.shell .picker-head .btn{position:absolute;inset-inline-end:12px;background:#fff;color:var(--acc,#2563EB);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.shell .picker>p{text-align:center;font-size:14px;margin:8px 14px!important}
+.shell .picker-grp{padding:6px 14px;align-items:center;border-top:1px dashed #E3E9F3}
+.shell .picker-gname{flex:0 0 130px;font-size:15px;padding:8px 10px;text-align:center;color:#fff;background:var(--gcol,#64748B);border-radius:10px}
+.shell .picker-grp:nth-of-type(6n+1){--gcol:#DB2777}.shell .picker-grp:nth-of-type(6n+2){--gcol:#7C3AED}.shell .picker-grp:nth-of-type(6n+3){--gcol:#2563EB}
+.shell .picker-grp:nth-of-type(6n+4){--gcol:#0891B2}.shell .picker-grp:nth-of-type(6n+5){--gcol:#059669}.shell .picker-grp:nth-of-type(6n+6){--gcol:#D97706}
+.shell .picker-items{gap:8px}
+.shell .pk{font-size:16px;font-weight:700;padding:7px 14px;border-radius:12px;border:2px solid color-mix(in srgb,var(--gcol,#64748B) 35%,#fff);background:#fff;color:#334155;min-height:40px}
+.shell .pk.on{background:var(--gcol,#2563EB);border-color:var(--gcol,#2563EB);color:#fff;box-shadow:0 3px 10px color-mix(in srgb,var(--gcol,#2563EB) 35%,transparent)}
+.shell .pk input{width:17px;height:17px}
+/* class rows: each class its own color */
+.cls-row td:first-child{box-shadow:inset -6px 0 0 var(--gc,#2563EB)}
+[dir=ltr] .cls-row td:first-child{box-shadow:inset 6px 0 0 var(--gc,#2563EB)}
+.cls-row .cls-name{color:var(--gc,#1E3A8A);font-size:19px}
+.cls-row:hover td{background:color-mix(in srgb,var(--gc,#2563EB) 7%,#fff)!important}
+/* lesson chips: fully colored, clickable */
+.cls-sub{border:0;cursor:pointer;font:inherit;font-size:14px;font-weight:700;padding:4px 10px;border-radius:9px;background:var(--c);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25);border-inline-start:0;transition:transform .08s,box-shadow .15s}
+.cls-sub b{background:rgba(255,255,255,.28);border-radius:6px;padding:0 6px;margin-inline-start:4px}
+.cls-sub:hover{transform:translateY(-1px);box-shadow:0 3px 8px rgba(0,0,0,.2)}
+/* per-day counts: colored and bigger */
+.gd-col{gap:4px}
+.gd-col span{background:var(--dc);color:#fff;border:0;min-width:42px;padding:3px 4px;border-radius:9px;font-size:17px;font-weight:800;font-family:'Space Grotesk',sans-serif;line-height:1.1}
+.gd-col span small{color:rgba(255,255,255,.9);font-size:11px;font-family:var(--head);display:block}
+.shell .picker-head .btn,.shell .picker-head .btn:disabled{color:#1E3A8A!important;font-weight:800;opacity:1}.shell .picker-head .btn:disabled{background:rgba(255,255,255,.75)}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1794996331"></script>
+<script src="app.js?v=1795093901"></script>
 </body>
 </html>
