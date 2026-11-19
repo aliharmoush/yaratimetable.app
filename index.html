@@ -938,11 +938,43 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 .shell .picker-items{flex-wrap:wrap}
 .shell .picker>p.muted{display:none}
 @keyframes gpulse2{0%,100%{box-shadow:0 6px 16px rgba(22,163,74,.35)}50%{box-shadow:0 6px 26px rgba(22,163,74,.7)}}
+/* grades page: compact so KG1..G9 fit one screen */
+.pg-grades .page-head p{display:none}
+.pg-grades .page-head{margin-bottom:6px!important}
+.pg-grades .page-head h1{font-size:21px!important}
+.pg-grades .picker{margin-bottom:6px}
+.pg-grades .picker:not(.is-open) .picker-head{min-height:34px;padding:3px 12px}
+.pg-grades .picker:not(.is-open) .picker-toggle{font-size:15.5px}
+.pg-grades .picker-sum{padding:4px 10px;gap:4px}
+.pg-grades .pk-mini{font-size:12.5px;padding:1px 8px}
+.pg-grades .toolbar{padding:4px 6px;margin-bottom:6px}
+.pg-grades .toolbar .btn{min-height:30px;padding:0 10px;font-size:13.5px}
+.pg-grades .cls-tbl th{padding:4px 8px;font-size:13px}
+.pg-grades .cls-tbl td{padding:2px 8px;height:34px}
+.pg-grades .cls-row .cls-name{font-size:16px;line-height:1.1}
+.pg-grades .cls-count{min-width:36px;height:26px;font-size:16px;border-radius:8px}
+.pg-grades .cls-tbl .pill{font-size:11.5px;padding:1px 7px}
+.pg-grades .cls-subs{gap:3px;flex-wrap:nowrap;overflow:hidden}
+.pg-grades .cls-sub{font-size:12.5px;padding:2px 7px;border-radius:7px;white-space:nowrap}
+.pg-grades .cls-sub b{padding:0 4px}
+.pg-grades .gd-col{gap:3px;flex-wrap:nowrap}
+.pg-grades .gd-col span{min-width:28px;padding:2px 3px;font-size:14px;border-radius:7px}
+.gd-head span{font-family:var(--head)!important;font-size:11.5px!important;padding:2px!important}
+.pg-grades .picker:not(.is-open){display:flex;align-items:stretch;padding:0}
+.pg-grades .picker:not(.is-open) .picker-head{flex:0 0 auto;border-radius:0}
+.pg-grades .picker:not(.is-open) .picker-sum{flex:1;justify-content:flex-start;flex-wrap:nowrap;overflow:hidden}
+.pg-grades .cls-tbl td{height:30px;padding-top:1px;padding-bottom:1px}
+.pg-grades .cls-count{height:23px;font-size:15px}
+.pg-grades .cls-sub{padding:1px 6px;font-size:12px}
+.pg-grades .gd-col span{padding:1px 3px;font-size:13px}
+.pg-grades .cls-row .cls-name{font-size:15.5px}
+.pg-grades .cls-tbl input[type=checkbox]{width:15px;height:15px}
+.pk-mini,.pk-edit{white-space:nowrap}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795095168"></script>
+<script src="app.js?v=1795095542"></script>
 </body>
 </html>
