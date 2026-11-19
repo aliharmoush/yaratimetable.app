@@ -1057,11 +1057,20 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 .ls-mo{display:flex;align-items:center;gap:6px}
 .shell .as-grades{flex:0 0 150px;width:150px}
 .shell .as-grades button{white-space:nowrap;font-size:15px;justify-content:space-between}
+/* timetable: centered big actions, full class names */
+.pg-timetable .page-head{position:relative}
+.tt-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:10px;align-items:center}
+.tt-center .btn-generate{font-size:20px!important;min-height:54px!important;padding:0 30px!important}
+.tt-center .tt-test{min-height:50px;font-size:17px;padding:0 20px;border:2px solid #10B981;color:#047857;background:#ECFDF5;font-weight:800}
+.tt-center .tt-test:hover{background:#D1FAE5}
+@media (max-width:1100px){.tt-center{position:static;transform:none}}
+.whole th.wl{font-size:13.5px!important;font-weight:800;color:#1E3A8A;padding:0 8px!important;width:auto!important;min-width:70px}
+.pg-timetable .page-head p{max-width:24vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795098928"></script>
+<script src="app.js?v=1795099369"></script>
 </body>
 </html>
