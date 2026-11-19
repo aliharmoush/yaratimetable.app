@@ -1066,11 +1066,24 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 @media (max-width:1100px){.tt-center{position:static;transform:none}}
 .whole th.wl{font-size:13.5px!important;font-weight:800;color:#1E3A8A;padding:0 8px!important;width:auto!important;min-width:70px}
 .pg-timetable .page-head p{max-width:24vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* page titles: centered and bigger (all pages except the timetable which has its big buttons in the middle) */
+.shell .main:not(.pg-timetable) .page-head{position:relative;min-height:52px;justify-content:flex-end}
+.shell .main:not(.pg-timetable) .page-head>div:first-child{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;padding:0;pointer-events:none;max-width:46%}
+.shell .main:not(.pg-timetable) .page-head::before{display:none}
+.shell .main:not(.pg-timetable) .page-head h1{font-size:27px!important;display:inline-block;padding-bottom:2px;border-bottom:4px solid var(--acc,#F5A524);border-radius:2px}
+.shell .main:not(.pg-timetable) .page-head p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.shell .main:not(.pg-timetable) .page-actions{margin-inline-start:auto;flex-direction:row-reverse}
+/* teacher form */
+.tf{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px}
+.sbox{background:#FFF8E6;border:1px solid #F7D9A0;border-radius:10px;padding:6px 10px;font-weight:700;font-size:13.5px;text-align:center}
+.shell .main:not(.pg-timetable) .page-head>div:first-child{max-width:34%}
+.pg-teachers .page-head p,.pg-subjects .page-head p,.pg-assign .page-head p{display:none}
+.shell .main:not(.pg-timetable) .page-head>div:first-child{position:static;transform:none;flex:1;max-width:none;min-width:0}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795099369"></script>
+<script src="app.js?v=1795102104"></script>
 </body>
 </html>
