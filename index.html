@@ -1282,11 +1282,30 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 .tcard-phone .tcard-chip{margin:0;margin-inline-start:6px;white-space:nowrap}
 .tcard-ok{color:#16A34A;font-weight:700;margin-inline-start:6px;font-size:12px}
 .tcard-f-phone{flex:1.4 1 240px}
+/* reports: per-table PDF + all classes on one sheet */
+.rbox{position:relative}
+.rbox-pdf{position:absolute;top:6px;left:6px;z-index:2;display:inline-flex;align-items:center;border:1px solid #CBD5E1;background:#fff;border-radius:8px;padding:3px 8px;font:inherit;font-size:12px;font-weight:700;color:#1D3A6B;cursor:pointer}
+.rbox-pdf svg{margin-inline-end:3px}
+.rbox-pdf:hover{background:#EFF6FF}
+.rgrid td{font-size:7px;line-height:1.1;padding:1px 0;overflow:hidden;white-space:nowrap;text-overflow:clip}
+.rgrid th.nm{font-size:10px}
+.rgrid th.n.de{border-inline-end:2.5px solid #222}
+@media print{.rbox-pdf{display:none}}
+.rdays th small{display:block;font-weight:500;font-size:9px;color:#555}
+.rdays td{padding:2px 3px;font-size:11px;line-height:1.2;text-align:center}
+.rdays td .m{display:block;font-weight:800;border-bottom:2px solid transparent;padding-bottom:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rdays td small{display:block;font-size:9px;color:#555}
+.rdays th.nm{font-size:12px}
+@media print{.rpage-day{height:auto!important;min-height:0}.rdays td{font-size:10px}}
+.rbox-pdf ~ .rhead{padding-left:70px}
+@media print{.rbox-pdf ~ .rhead{padding-left:0}}
+.rgrid{table-layout:fixed}.rgrid th.cl{width:62px}
+.rgrid th.nm{width:64px;min-width:64px;white-space:nowrap;font-size:9.5px}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795279179"></script>
+<script src="app.js?v=1795280305"></script>
 </body>
 </html>
