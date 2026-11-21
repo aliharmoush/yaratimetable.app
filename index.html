@@ -1363,11 +1363,53 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 .dt-chip{border:0;font:inherit;cursor:pointer;margin:2px}
 .dt-chip:hover:not(:disabled){background:#DBEAFE;color:#1D3A6B}
 .dt-chip:disabled{cursor:default}
+/* linked cards */
+.card-back{display:inline-block;border:1px solid #CBD5E1;background:#fff;border-radius:8px;padding:4px 12px;font:inherit;font-size:13px;font-weight:700;color:#1D3A6B;cursor:pointer;margin:0 0 8px}
+.card-back:hover{background:#EFF6FF}
+.card-lnk{border:0;background:none;padding:0;font:inherit;color:#1D3A6B;cursor:pointer;text-align:start}
+.card-lnk.b{font-weight:800}
+.card-lnk:hover:not(:disabled){text-decoration:underline}
+.card-lnk.miss{color:#B91C1C;font-weight:700}
+.card-lnk:disabled{cursor:default}
+.tcard-sub.lnk{border:0;font:inherit;font-weight:700;cursor:pointer;color:#fff}
+.tcard-sub.lnk:hover{opacity:.85;text-decoration:underline}
+.card-chip{display:inline-block;border:0;background:#F1F5F9;color:#334155;border-radius:99px;padding:2px 10px;margin:2px;font:inherit;font-size:12.5px;cursor:pointer}
+.card-chip:hover{background:#DBEAFE;color:#1D3A6B}
+.card-tbl td.t{white-space:nowrap;width:1%;padding-inline-end:10px}
+.card-also{margin:6px 0 0;font-size:13px}
+.card-stats{display:flex;flex-wrap:wrap;font-size:13px;color:#475569;margin-top:4px}
+.card-stats span{margin-inline-end:14px}
+.card-stats b{color:#0F172A;font-size:15px}
+.card-stats .bad b,.card-stats .bad{color:#B91C1C}
+.card-title-row{display:flex;align-items:center;flex-wrap:wrap}
+.card-big{font-size:22px;font-weight:800;color:#0F172A;margin-inline-end:12px}
+.card-seg{margin:0}
+.card-ava-cls{background:#2563EB}
+.card-color{height:34px;padding:2px;width:100%;cursor:pointer}
+.card-week td{padding:1px}
+.card-week td.emp{background:#F8FAFC}
+.card-nogrid{padding:20px;text-align:center;border:1px dashed #CBD5E1;border-radius:12px;background:#fff}
+.tcard-nb.red{color:#B91C1C;border-color:#FCA5A5;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.tcard-nb.red svg,.tcard-nb svg{vertical-align:-2px}
+button.tcard-nb{font:inherit;font-size:13px;font-weight:700;cursor:pointer;width:100%}
+.card-row{cursor:pointer}
+.card-row:hover td{background:#F5F9FF}
+.card-chipbtn{border:0;font:inherit;cursor:pointer}
+.card-chipbtn:hover{filter:brightness(.95);text-decoration:underline}
+.tcard-lessons header .btn{margin-inline-start:4px}
+.pick-list{max-height:55vh;overflow:auto;border:1px solid #E2E8F0;border-radius:10px}
+.pick-item{display:flex;align-items:center;padding:7px 10px;border-bottom:1px solid #EEF2F7;cursor:pointer;margin:0}
+.pick-item:last-child{border-bottom:0}
+.pick-item input{margin:0;margin-inline-end:10px;width:18px;height:18px;flex:0 0 auto}
+.pick-item small{margin-inline-start:8px}
+.pick-item.on{background:#EFF6FF}
+.wl-lnk{cursor:pointer}
+.wl-lnk:hover{text-decoration:underline;color:#1D3A6B}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795282122"></script>
+<script src="app.js?v=1795283088"></script>
 </body>
 </html>
