@@ -168,7 +168,7 @@ table.tbl{width:100%;border-collapse:collapse;font-size:14px}
 .plist .brk{color:var(--warn)}
 
 /* modal */
-.modal-back{position:fixed;inset:0;background:rgba(18,34,63,.45);display:flex;align-items:center;justify-content:center;padding:16px;z-index:100}
+.modal-back{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(18,34,63,.45);display:flex;align-items:center;justify-content:center;padding:16px;z-index:100}
 .modal{background:#fff;border-radius:16px;width:100%;max-width:520px;max-height:92vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.25)}
 .modal-wide{max-width:780px}
 .modal-head{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line)}
@@ -387,8 +387,8 @@ table.whole{border-collapse:collapse;font-size:11px;min-width:100%}
 .per-4 .rtbl{font-size:10.5px}.per-4 .rtbl td small{font-size:8.5px}.per-4 .rtbl tbody th{width:42px}.per-4 .rtbl tbody th b{font-size:13px}
 .rtbl td.x{background:#EEF0F4}
 .rfoot{display:flex;justify-content:space-between;font-size:8.5px;color:#555;margin-top:2px}
-.trial .rpage::after{content:'';position:absolute;inset:50% 0 0 0;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);background:rgba(255,255,255,.35)}
-.trial-veil{position:absolute;inset:50% 0 0 0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--navy);text-align:center;padding:10px}
+.trial .rpage::after{content:'';position:absolute;top:50%;right:0;bottom:0;left:0;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);background:rgba(255,255,255,.35)}
+.trial-veil{position:absolute;top:50%;right:0;bottom:0;left:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--navy);text-align:center;padding:10px}
 .trial-veil b{font-size:18px}
 @media print{
   .topbar,.side,.bottombar,.banner,.no-print,.toasts{display:none!important}
@@ -1210,6 +1210,6 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795275151"></script>
+<script src="app.js?v=1795275256"></script>
 </body>
 </html>
