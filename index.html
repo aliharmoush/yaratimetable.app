@@ -1265,11 +1265,28 @@ table.dbell{width:100%;border-collapse:collapse;font-size:15px}
 @media (max-width:640px){.tcard-head{flex-wrap:wrap}.tcard-acts{margin:10px 0 0;width:100%}.tcard-who h1{font-size:20px}}
 @media print{.tcard-head,.tcard-box{border:0;box-shadow:none}}
 .tcard-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+/* teacher card as a window */
+.modal.tcard-modal{max-width:980px}
+.tcard-modal .modal-body{display:block;background:#F8FAFC}
+.tcard-modal .tcard-head,.tcard-modal .tcard-box{margin-bottom:12px}
+.tcard-info{display:flex;flex-wrap:wrap;align-items:flex-end;margin:0 -6px 4px}
+.tcard-f{flex:1 1 180px;margin:0 6px 8px;min-width:150px}
+.tcard-f-name{flex:2 1 260px}
+.tcard-f-num{flex:0 1 130px;min-width:110px}
+.tcard-f label{display:block;font-size:13px;font-weight:700;color:#475569;margin-bottom:3px;text-align:start}
+.shell .tcard-f label,.modal .tcard-f label{text-align:start;font-size:13px}
+.tcard-f .input{width:100%}
+.tcard-f-name .input{font-size:20px;font-weight:800;color:#0F172A}
+.tcard-phone{display:flex;align-items:center}
+.tcard-phone .input{flex:1 1 auto;min-width:130px}
+.tcard-phone .tcard-chip{margin:0;margin-inline-start:6px;white-space:nowrap}
+.tcard-ok{color:#16A34A;font-weight:700;margin-inline-start:6px;font-size:12px}
+.tcard-f-phone{flex:1.4 1 240px}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795278468"></script>
+<script src="app.js?v=1795279179"></script>
 </body>
 </html>
