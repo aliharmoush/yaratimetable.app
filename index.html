@@ -2252,11 +2252,51 @@ button.tl-c{cursor:pointer}.tl-c.on{box-shadow:inset 0 0 0 2px #EA580C}
 .tt3.t.on{border-color:#2563EB;background:#EFF6FF;color:#1E3A8A}.tt3.t.on .n{background:#2563EB;color:#fff}
 .tt3.c.on{border-color:#EA580C;background:#FFF7ED;color:#9A3412}.tt3.c.on .n{background:#EA580C;color:#fff}
 .tm-title b.cl{color:#C2410C}
+/* teacher card v3 */
+.tc2-head .tm-chip{margin-inline-start:6px}
+.tc3-name{font:inherit;font-size:21px;font-weight:900;color:var(--ink);background:none;border:1.5px dashed transparent;border-radius:8px;padding:0 6px;cursor:pointer;display:inline-flex;align-items:center}
+.tc3-name:hover:not(:disabled){border-color:#CBD5E1}.tc3-name i{font-style:normal;font-size:13px;margin-inline-start:8px;opacity:.6}
+.tc3-name:disabled{cursor:default}
+.tc3-nin{font-size:19px!important;font-weight:800;max-width:320px;height:36px}
+.tc2-head small{display:block;padding:0 6px}
+.tc3-del{border:0;background:none;font-size:18px;cursor:pointer;margin-inline-start:8px;opacity:.75}.tc3-del:hover{opacity:1}
+.tc3-short{cursor:pointer;font:inherit}
+.tc3-info{display:flex;flex-wrap:wrap;align-items:flex-end;background:#F8FAFC;border:1px solid #E2E8F0;border-radius:10px;padding:6px 10px;margin-bottom:10px}
+.tc3-info .tcard-f{margin:0;margin-inline-end:16px;width:auto;flex:0 1 auto}
+.tc3-info label{font-size:12px}
+.tc3-info .input{height:32px;font-size:13.5px}
+.tc3-info .tcard-phone .input{width:150px}
+.tc3-tbl{width:100%;border-collapse:collapse}
+.tc3-tbl th,.tc3-tbl td{border:1px solid #CBD5E1;padding:5px 8px}
+.tc3-tbl thead th{background:#EFF6FF;color:#1E3A8A;font-weight:800;font-size:12.5px;text-align:start}
+.tc3-tbl .n{text-align:center;width:110px}
+.tc3-tbl tfoot td{background:#F8FAFC;font-weight:800}
+.tc3-step{display:inline-flex;align-items:center;border:1px solid #CBD5E1;border-radius:8px;overflow:hidden;background:#fff}
+.tc3-step button{width:24px;height:26px;border:0;background:#F1F5F9;font-weight:900;cursor:pointer;font-size:14px}
+.tc3-step button:disabled{opacity:.35;cursor:default}
+.tc3-step b{min-width:30px;text-align:center}
+/* teachers page v3 */
+.tl-load{display:block;color:#EA580C;font-weight:800;font-size:12.5px;margin-top:2px}
+.tl-tbl tbody tr:nth-child(even) td,.tl-tbl tbody tr:nth-child(even) th{background:#FFFBF7}
+.tl-tbl tbody tr:hover td,.tl-tbl tbody tr:hover th{background:#FFF7ED}
+.tl-tbl thead th{position:sticky;top:0;z-index:2}
+.tl-ch{cursor:pointer}
+.tl-chg-r{display:flex;align-items:center;padding:8px 6px;border-bottom:1px dashed #E2E8F0}
+.tl-chg-r b{width:150px}.tl-chg-r small{flex:1;color:#64748B}
+.tl-chg-r select{width:220px;height:34px}
+.tl-chg-r.all{background:#F8FAFC;border-radius:8px}.tl-chg-r.all b{flex:1}
+.tl-chg-r.ch{background:#F0FDF4}.tl-chg-r.ch select{border-color:#16A34A;color:#15803D;font-weight:700}
+.tl-chg-msg{font-size:12.5px;color:#15803D;font-weight:700}
+.tl-tbl .tl-load{color:#EA580C!important;font-size:13px!important;font-weight:800!important}
+.tl-tbl .tl-emp{max-width:140px}
+.sb-tb{font:inherit;font-size:12.5px;font-weight:700;color:#1E3A8A;background:#EFF6FF;border:1px solid #BFDBFE;border-radius:99px;padding:1px 9px;margin:1px 2px;cursor:pointer;white-space:nowrap}
+.sb-tb:hover:not(:disabled){background:#DBEAFE}.sb-tb:disabled{cursor:default}
+.tl-tbl thead th:nth-child(3){width:160px}.tl-tbl thead th:nth-child(2){width:220px}.tl-tbl thead th:last-child{width:56px}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795547982"></script>
+<script src="app.js?v=1795551474"></script>
 </body>
 </html>
