@@ -2227,11 +2227,26 @@ button.tl-c{cursor:pointer}.tl-c.on{box-shadow:inset 0 0 0 2px #EA580C}
 .tm-legend{font-size:13px;color:#475569;margin:8px 0 0}
 .es-tmb{font:inherit;font-size:11.5px;font-weight:800;color:#C2410C;background:#FFEDD5;border:1px solid #FDBA74;border-radius:99px;padding:0 6px;margin-inline-start:4px;cursor:pointer;vertical-align:middle}
 .es-row .es-tmb{display:table;margin:2px auto 0;line-height:1.5}
+/* times page: two big clear tabs */
+.tm-tabs2{display:flex;margin-bottom:10px}
+.tt2{flex:1;display:flex;align-items:center;text-align:start;font:inherit;border:2px solid #E2E8F0;background:#fff;border-radius:16px;padding:10px 16px;margin-inline-end:12px;cursor:pointer;color:#475569;box-shadow:0 2px 8px rgba(15,30,58,.05)}
+.tt2:last-child{margin-inline-end:0}
+.tt2 .ic{font-size:30px;width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:#F1F5F9;margin-inline-end:12px;flex:none}
+.tt2 .tx{flex:1}.tt2 b{display:block;font-size:19px;font-weight:900}.tt2 small{display:block;font-size:13px;color:#64748B;margin-top:2px}
+.tt2 .n{font-size:15px;font-weight:900;border-radius:99px;padding:3px 12px;background:#F1F5F9;color:#475569}
+.tt2:hover{border-color:#CBD5E1}
+.tt2.t.on{border-color:#2563EB;background:linear-gradient(135deg,#EFF6FF,#fff);color:#1E3A8A;box-shadow:0 6px 18px rgba(37,99,235,.18)}
+.tt2.t.on .ic{background:#2563EB}.tt2.t.on .n{background:#2563EB;color:#fff}
+.tt2.c.on{border-color:#EA580C;background:linear-gradient(135deg,#FFF7ED,#fff);color:#9A3412;box-shadow:0 6px 18px rgba(234,88,12,.18)}
+.tt2.c.on .ic{background:#EA580C}.tt2.c.on .n{background:#EA580C;color:#fff}
+.tt2:not(.on){opacity:.85}
+@media (max-width:640px){.tt2 .ic{width:40px;height:40px;font-size:22px}.tt2 b{font-size:16px}.tt2 small{display:none}}
+.tm-t.tm-g.on{background:#EA580C!important;border-color:#EA580C!important;color:#fff}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795547225"></script>
+<script src="app.js?v=1795547408"></script>
 </body>
 </html>
