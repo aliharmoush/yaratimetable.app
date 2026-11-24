@@ -2047,13 +2047,13 @@ button.tl-c{cursor:pointer}.tl-c.on{box-shadow:inset 0 0 0 2px #EA580C}
 @media print{body.rp-eco *{background:transparent!important;background-color:transparent!important;box-shadow:none!important;color:#000!important}}
 /* ===== timetable header v2: print menu, check button ===== */
 .tt-pw{position:relative;display:inline-block}
-.pm{position:absolute;top:110%;right:0;z-index:70;width:300px;background:#fff;border:1px solid #CBD5E1;border-radius:14px;box-shadow:0 18px 44px rgba(15,30,58,.25);padding:6px}
-[dir=ltr] .pm{right:auto;left:0}
-.pm-it{display:flex;align-items:center;width:100%;font:inherit;text-align:start;background:none;border:0;border-radius:10px;padding:7px 8px;cursor:pointer;color:var(--ink)}
-.pm-it:hover{background:#F5F3FF}.pm-it i{font-style:normal;font-size:20px;width:32px;text-align:center;margin-inline-end:6px}
-.pm-it b{display:block;font-size:14px}.pm-it small{display:block;color:#64748B;font-size:12px}
-.pm-eco{display:flex;align-items:center;font-size:13px;padding:8px;border-top:1px solid #E2E8F0;margin-top:4px;cursor:pointer}.pm-eco input{width:17px;height:17px;margin-inline-end:8px}
-.pm-more{display:block;width:100%;font:inherit;font-weight:800;font-size:13.5px;color:#6D28D9;background:#F5F3FF;border:0;border-radius:10px;padding:8px;cursor:pointer;margin-top:2px}
+.prm{position:absolute;top:110%;right:0;z-index:70;width:300px;background:#fff;border:1px solid #CBD5E1;border-radius:14px;box-shadow:0 18px 44px rgba(15,30,58,.25);padding:6px}
+[dir=ltr] .prm{right:auto;left:0}
+.prm-it{display:flex;align-items:center;width:100%;font:inherit;text-align:start;background:none;border:0;border-radius:10px;padding:7px 8px;cursor:pointer;color:var(--ink)}
+.prm-it:hover{background:#F5F3FF}.prm-it i{font-style:normal;font-size:20px;width:32px;text-align:center;margin-inline-end:6px}
+.prm-it b{display:block;font-size:14px}.prm-it small{display:block;color:#64748B;font-size:12px}
+.prm-eco{display:flex;align-items:center;font-size:13px;padding:8px;border-top:1px solid #E2E8F0;margin-top:4px;cursor:pointer}.prm-eco input{width:17px;height:17px;margin-inline-end:8px}
+.prm-more{display:block;width:100%;font:inherit;font-weight:800;font-size:13.5px;color:#6D28D9;background:#F5F3FF;border:0;border-radius:10px;padding:8px;cursor:pointer;margin-top:2px}
 .tt-chk{font:inherit;font-weight:800;font-size:14px;border-radius:10px;padding:0 14px;min-height:40px;cursor:pointer;border:1.5px solid #CBD5E1;background:#fff;color:#0F1E3A;white-space:nowrap;display:inline-flex;align-items:center}
 .tt-chk.bad{border-color:#FCA5A5;background:#FEF2F2;color:#B91C1C}.tt-chk.warn{border-color:#FCD34D;background:#FFFBEB;color:#92400E}.tt-chk.ok{border-color:#86EFAC;background:#F0FDF4;color:#15803D}
 .tt-chkn{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:99px;background:#DC2626;color:#fff;font-size:12px;margin-inline-start:7px;padding:0 6px}
@@ -2098,7 +2098,7 @@ button.tl-c{cursor:pointer}.tl-c.on{box-shadow:inset 0 0 0 2px #EA580C}
   .sb-bar .btn{margin-inline-start:0;margin-inline-end:8px;margin-top:4px}
   .pd-cards{flex-wrap:wrap!important}
   .pd-cards>*{flex:1 1 45%;min-width:0;margin-bottom:8px}
-  .pm{position:fixed!important;left:10px!important;right:10px!important;top:auto!important;bottom:10px;width:auto!important;max-height:80vh;overflow:auto}
+  .prm{position:fixed!important;left:10px!important;right:10px!important;top:auto!important;bottom:10px;width:auto!important;max-height:80vh;overflow:auto}
   .pg-timetable .page-actions>*{margin-bottom:6px}
   .tt-gap{display:none}
   .shell .btn.tt-gen{font-size:17px!important;min-height:46px!important;padding:0 18px!important}
@@ -2107,11 +2107,68 @@ button.tl-c{cursor:pointer}.tl-c.on{box-shadow:inset 0 0 0 2px #EA580C}
   .pd-top>*,.si2-top>*{max-width:100%}
   .pd-top .btn,.si2-top .btn{white-space:normal;height:auto;margin-top:6px}
 }
+/* ===== school info v3: radios, compact grid, schedule inside ===== */
+.si2-ch small{font-weight:500;opacity:.85;margin-inline-start:10px;font-size:12.5px}
+.pg-settings .si2-cb{padding:10px 14px}
+.pg-settings .si2-card{margin-bottom:8px}
+.pg-settings .si2-top{margin-bottom:8px}
+.pg-settings .si2-logos{width:100px;flex:none;margin-inline-end:16px;text-align:center}
+.pg-settings .si2-logo{width:96px;height:96px;margin:0 auto}
+.si3-up{font:inherit;font-size:12px;font-weight:800;color:#2563EB;background:none;border:0;cursor:pointer;margin-top:4px}
+.si3-rm{font:inherit;font-size:12px;color:#B91C1C;background:none;border:0;cursor:pointer}
+.si3-grid{flex:1;display:flex;flex-wrap:wrap;margin:0 -6px;align-content:flex-start}
+.si3-f{width:calc(33.333% - 12px);margin:0 6px 8px}.si3-f.w2{width:calc(66.666% - 12px)}
+.si3-f label{display:block;font-weight:800;font-size:12.5px;color:#1E3A8A;margin-bottom:3px}
+.si3-f .input{height:38px}
+.si3-rad{display:flex}
+.si3-rad button{flex:1;display:flex;align-items:center;font:inherit;font-size:13.5px;font-weight:700;color:#334155;border:2px solid #CBD5E1;background:#fff;border-radius:10px;height:38px;padding:0 9px;margin-inline-end:6px;cursor:pointer;white-space:nowrap}
+.si3-rad button:last-child{margin-inline-end:0}
+.si3-rad button i{width:16px;height:16px;border-radius:50%;border:2px solid #94A3B8;margin-inline-end:7px;flex:none;box-sizing:border-box}
+.si3-rad button small{color:#64748B;font-size:11.5px;font-weight:500;margin-inline-start:5px}
+.si3-rad button.on{border-color:#2563EB;background:#EFF6FF;color:#1E3A8A}.si3-rad button.on i{border:5px solid #2563EB}
+.si3-rad.off{opacity:.45}.si3-rad button:disabled{cursor:not-allowed}
+/* schedule embedded */
+.se-sum{display:flex;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.se-sum .big{font-size:28px;font-weight:900;color:#0F766E;margin-inline-end:10px;line-height:1}.se-sum b{font-size:15px}.se-sum .s{color:#64748B;font-size:12.5px;margin-inline-start:8px}
+.se-chip{background:#FEF3C7;color:#92400E;border-radius:99px;padding:3px 12px;font-weight:700;font-size:12.5px}
+.pg-settings .pd-tbl th,.pg-settings .pd-tbl td{height:32px}
+.pg-settings .pd-wrap{margin-bottom:0}
+.se-offrow td{text-align:start!important;padding:3px 8px!important}
+.se-offd{display:inline-flex;align-items:center;font:inherit;font-size:13px;font-weight:700;color:#64748B;background:#fff;border:1.5px solid #E2E8F0;border-radius:99px;padding:2px 10px 2px 4px;margin-inline-end:6px;cursor:pointer}
+[dir=rtl] .se-offd{padding:2px 4px 2px 10px}
+.se-offd .pd-sw{margin-inline-end:6px;pointer-events:none}
+.se-offd:hover{border-color:#5EEAD4;color:#0F766E}
+.se-links{display:flex;flex-wrap:wrap;margin-top:8px}
+.se-lk{flex:1;min-width:260px;display:flex;align-items:center;text-align:start;font:inherit;border:1.5px solid #99F6E4;background:#F0FDFA;border-radius:12px;padding:8px 12px;margin-inline-end:8px;cursor:pointer;color:var(--ink)}
+.se-lk:last-child{margin-inline-end:0}
+.se-lk.adv{border-color:#C7D2FE;background:#EEF2FF}
+.se-lk .e{font-size:20px;margin-inline-end:10px}.se-lk b{display:block;font-size:14px}.se-lk small{display:block;color:#475569;font-size:12px}
+.se-lk .ar{font-weight:900;color:#0F766E;margin-inline-start:8px}.se-lk.adv .ar{color:#4338CA}
+.se-lk:hover{filter:brightness(.98)}.se-lk.on{box-shadow:inset 0 0 0 1px currentColor}
+.se-det{border:2px solid #99F6E4;border-radius:14px;margin-top:8px;padding:10px 12px;background:#FAFFFE}
+.se-det.adv{border-color:#C7D2FE;background:#FAFAFF}
+.se-det .pd-cards{margin-top:8px;margin-bottom:0}
+@media (max-width:900px){.si3-f{width:calc(50% - 12px)}.si3-f.w2{width:calc(100% - 12px)}}
+@media (max-width:640px){.si3-f,.si3-f.w2{width:calc(100% - 12px)}.pg-settings .si2-id{flex-wrap:wrap}.pg-settings .si2-logos{width:100%;margin:0 0 8px}}
+/* compact week table inside school info */
+.pg-settings .pd-tbl th,.pg-settings .pd-tbl td{height:31px}
+.pg-settings .pd-tbl thead th{height:auto;padding:3px 2px;line-height:1.15}
+.pg-settings .pd-tbl td button{height:29px;font-size:15px}
+.pg-settings .pd-tbl .pd-dn{padding:0 8px}
+.pg-settings .pd-tbl td.pd-cnt .pd-step button{width:26px;height:26px;font-size:15px}
+.pd-tbl .se-offrow td button.se-offd{width:auto;height:26px;display:inline-flex;font-size:13px;font-weight:700;margin:2px 0;margin-inline-end:6px}
+.pd-tbl .se-offrow .pd-dn{font-size:13px;font-weight:700}
+/* entry sheet cell: teacher name big on top, periods small under it */
+.es-cell{height:52px}
+.es-in{height:27px!important;font-size:14.5px!important;font-weight:800!important;color:#0F1E3A}
+.es-in::placeholder{font-size:13.5px;font-weight:800}
+.es-n{height:17px!important;font-size:12px!important;font-weight:700!important;opacity:.9}
+.es-n::placeholder{font-size:11px}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795524556"></script>
+<script src="app.js?v=1795539192"></script>
 </body>
 </html>
