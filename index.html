@@ -2578,11 +2578,113 @@ html[dir=ltr] .sb3-tbl .st1{right:auto;left:0}html[dir=ltr] .sb3-tbl .st2{right:
 .sb3-seg button.on{box-shadow:0 3px 10px rgba(15,23,42,.18)}
 .sb3-tbl .h1 th{font-size:15px;font-weight:800;padding:9px 4px;letter-spacing:.2px}
 .sb3-tbl .h2 th{font-size:13.5px;top:39px}
+/* ===== shared action buttons (same look and place on every page) ===== */
+.ab-add{display:inline-flex;align-items:center;gap:7px;height:44px;padding:0 18px;border-radius:11px;border:2px solid #86C46A;background:#EEF8E8;color:#2F6B12;font:inherit;font-size:16.5px;font-weight:800;cursor:pointer;white-space:nowrap}
+.ab-add:hover{background:#E0F2D6;border-color:#5FA83F}
+.ab-add:disabled{opacity:.5;cursor:default}
+.ab-acts{display:inline-flex;gap:6px;flex:none;vertical-align:middle}
+.ab-tile{width:56px;height:50px;padding:0;border-radius:10px;border:2px solid;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font:inherit;font-size:12.5px;font-weight:800;cursor:pointer;line-height:1}
+.ab-ed{border-color:#9CC4EE;background:#EEF5FD;color:#1D5FA6}
+.ab-ed:hover{background:#DFECFB;border-color:#6FA6E0}
+.ab-dl{border-color:#F2B0B0;background:#FDF0F0;color:#B42318}
+.ab-dl:hover{background:#FBE1E1;border-color:#E88585}
+.ab-tile:disabled{opacity:.45;cursor:default}
+@media print{.ab-add,.ab-acts{display:none!important}}
+/* teachers table: bigger name and periods, coloured subjects, clear borders (26/11/2026) */
+.tq-bh{gap:12px;margin-bottom:10px}
+.tq-tbl{border:1.5px solid #94A3B8;border-collapse:collapse}
+.tq-tbl th{font-size:14px;color:#334155;background:#F1F5F9;border:1px solid #CBD5E1;padding:9px 10px}
+.tq-tbl td{border:1px solid #CBD5E1;padding:10px}
+.tq-nmrow{display:flex;align-items:center;gap:10px}
+.tq-nmtxt{flex:1;min-width:0}
+.tq-name{font-size:18px;color:#12223F}
+.tq-nm2{display:block;margin-top:5px;font-size:13.5px}
+.tq-cnt{display:inline-block;background:#1E3A6B;color:#fff;border-radius:7px;padding:2px 10px;font-size:15px;font-weight:800;margin-inline-end:6px}
+.tq-sub{border:1.5px solid transparent;font-size:14.5px;font-weight:700;padding:5px 11px;margin:3px}
+.tq-sub b{font-size:15px;color:inherit}
+.tq-sub:hover{filter:brightness(.96)}
+.tq-nmh{width:40%}
+.tq-tot{font-size:16px}
+.tq-tbl tfoot td{background:#F1F5F9}
+@media print{.tq-cnt{background:none;color:#000;padding:0}.tq-tbl{border-color:#000}}
+.es-row .ab-acts{margin-inline-end:6px}
+/* subjects: name cell holds the edit/delete tiles */
+.sb3-nm{min-width:280px;max-width:280px;width:280px}
+.sb3-tbl .st2{right:280px}html[dir=ltr] .sb3-tbl .st2{right:auto;left:280px}
+.sb3-nmrow{display:flex;align-items:center;gap:6px}
+.sb3-nmrow .grow{flex:1}
+.sb3-h1+.ab-add{margin-inline-start:14px}
+/* ===== teacher window: lessons + time off (26/11/2026) ===== */
+.modal.te-modal{max-width:1040px;width:96vw}
+.te-top{display:flex;flex-wrap:wrap;margin:0 -4px 8px}
+.te-f{display:block;flex:1 1 170px;margin:0 4px 4px}
+.te-f.w2{flex:2 1 240px}
+.te-f>span{display:block;font-size:12.5px;font-weight:700;color:#64748B;margin-bottom:3px}
+.te-f .input{font-size:16px;font-weight:700}
+.te-dup{color:#B42318;font-weight:700;margin:0 0 6px;font-size:13.5px}
+.te-cols{display:flex;flex-wrap:wrap;margin:0 -5px}
+.te-pn{flex:1 1 380px;margin:0 5px 8px;border:1.5px solid #CBD5E1;border-radius:12px;padding:10px;min-width:0}
+.te-pn h4{margin:0 0 8px;font-size:16px;color:#12223F}
+.te-step{display:flex;align-items:center;flex-wrap:wrap;font-size:14px;font-weight:700;color:#334155;margin:4px 0 5px}
+.te-step i{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#185FA5;color:#fff;font-size:12.5px;margin-inline-end:6px}
+.te-only{margin-inline-start:auto;font-size:12.5px;font-weight:600;color:#475569;cursor:pointer}
+.te-sel{font-size:16px!important;font-weight:800!important;height:42px;border-width:2px!important;margin-bottom:6px}
+.te-groups{max-height:210px;overflow:auto}
+.te-grp{border:1px solid #E2E8F0;border-radius:10px;padding:6px 7px;margin-bottom:5px}
+.te-gh{display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:700;color:#64748B;margin-bottom:4px}
+.te-gh button{border:1.5px solid #9CC4EE;background:#EEF5FD;color:#1D5FA6;border-radius:7px;padding:1px 10px;font:inherit;font-size:12.5px;font-weight:800;cursor:pointer}
+.te-chips{display:flex;flex-wrap:wrap}
+.te-chip{display:inline-flex;flex-direction:column;align-items:center;border:1.5px solid #CBD5E1;background:#fff;border-radius:8px;padding:4px 9px;margin:2px;font:inherit;cursor:pointer;line-height:1.25;min-width:62px}
+.te-chip b{font-size:14px;color:#1E293B}
+.te-chip small{font-size:11.5px;color:#64748B;font-weight:600}
+.te-chip.on{background:#185FA5;border-color:#185FA5}.te-chip.on b,.te-chip.on small{color:#fff}
+.te-chip.busy{border-style:dashed;background:#F8FAFC}.te-chip.busy b{color:#94A3B8}
+.te-chip.busy.on{border-style:solid}
+.te-chip.mine{background:#EEF8E8;border-color:#86C46A;cursor:default}.te-chip.mine small{color:#2F6B12}
+.te-addrow{display:flex;align-items:center;flex-wrap:wrap;background:#F8FAFC;border-radius:10px;padding:6px;margin:4px 0 6px}
+.te-pk{flex:1;display:flex;flex-wrap:wrap;min-width:0}
+.te-pkn{display:inline-flex;align-items:center;font-size:13px;font-weight:700;margin:2px 3px}
+.te-pkn .te-stp{margin-inline-start:4px}
+.te-stp{display:inline-flex;align-items:center;border:1px solid #CBD5E1;border-radius:8px;background:#fff;overflow:hidden;flex:none}
+.te-stp button{border:0;background:none;width:26px;height:28px;font-size:17px;cursor:pointer;color:#475569;padding:0}
+.te-stp button:hover{background:#F1F5F9}
+.te-stp b{min-width:22px;text-align:center;font-size:15px}
+.te-list{max-height:220px;overflow:auto;margin-top:4px}
+.te-li{display:flex;align-items:center;border:1px solid #E2E8F0;border-radius:9px;padding:4px 6px;margin-bottom:4px}
+.te-li.new{border-color:#86C46A;background:#F7FCF4}
+.te-sj{border-radius:6px;padding:2px 9px;font-weight:800;font-size:13.5px;flex:none}
+.te-cl{flex:1;min-width:0;font-weight:700;font-size:14px;margin:0 8px}
+.te-x{border:0;background:#FDF0F0;color:#B42318;border-radius:7px;width:28px;height:28px;margin-inline-start:6px;cursor:pointer;font-size:14px;font-weight:800}
+.te-grid{width:100%;border-collapse:collapse;table-layout:fixed}
+.te-grid th,.te-grid td{border:1px solid #CBD5E1;padding:0;text-align:center;height:32px}
+.te-grid th{background:#EEF5FD}
+.te-grid thead th:first-child{width:72px}
+.te-grid th button,.te-grid td button{width:100%;height:100%;min-height:30px;border:0;background:none;font:inherit;font-size:13.5px;font-weight:800;cursor:pointer;color:#1D5FA6;padding:0}
+.te-grid td.on{background:#F3FAEE}.te-grid td.on button{color:#3B6D11}
+.te-grid td.off{background:#FCEBEB}.te-grid td.off button{color:#A32D2D}
+.te-grid td.none{background:#F1F5F9}
+.te-hint{font-size:12.5px;color:#64748B;margin:6px 0 0}
+.te-sum{display:inline-flex;align-items:center;flex-wrap:wrap;font-size:15px;font-weight:700;color:#1E293B}
+.te-sum b{color:#2F6B12;margin-inline-start:8px}
+.te-sum.bad b{color:#B42318}
+.te-bar{display:inline-block;width:110px;height:8px;border-radius:5px;background:#E2E8F0;overflow:hidden;margin-inline-start:10px}
+.te-bar u{display:block;height:100%;background:#639922}
+.te-sum.bad .te-bar u{background:#DC2626}
+/* subject window */
+.se-cols{display:flex;flex-wrap:wrap;align-items:center;min-height:38px}
+.se-dot{width:24px;height:24px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #CBD5E1;margin:2px;cursor:pointer;padding:0}
+.se-dot.on{box-shadow:0 0 0 2.5px #12223F}
+.se-any{width:30px;height:26px;padding:0;border:1px solid #CBD5E1;border-radius:6px;margin:2px;cursor:pointer;background:#fff}
+.se-list{max-height:430px}
+.se-cl{flex:0 0 90px}
+.se-t{flex:1;min-width:0;height:32px!important;font-size:14px!important;font-weight:700;padding:0 6px!important}
+.se-t.no{color:#B42318;border-color:#F2B0B0!important;background:#FDF0F0}
+.te-li .te-stp{margin-inline-start:6px}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795669375"></script>
+<script src="app.js?v=1795694873"></script>
 </body>
 </html>
