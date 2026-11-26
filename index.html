@@ -2897,11 +2897,19 @@ html[dir=ltr] .cm-g.on{box-shadow:inset 4px 0 0 #185FA5}
 .cm-one{columns:auto}
 .cm-sub{cursor:pointer;max-width:560px}
 .cm-sub.pb-on{border-color:#185FA5!important;box-shadow:0 0 0 2px #185FA5}
+/* class details: add subject on top (short), periods right next to the subject */
+.cm-sh{display:flex;align-items:center;margin-bottom:5px}
+.cm-sh .cm-lbl{margin-inline-end:10px}
+.cm-addsel{width:150px!important;height:32px!important;font-size:13.5px!important;margin-inline-end:6px}
+.cm-addbtn{height:32px!important;font-size:13.5px!important;padding:0 10px!important}
+.cm-sub{display:grid!important;grid-template-columns:130px auto;justify-content:start;align-items:center;width:-moz-fit-content;width:fit-content;max-width:none;padding:3px 6px!important}
+.cm-sub .te-sj{justify-self:start}
+.cm-sub .te-stp{margin-inline-start:4px}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795716202"></script>
+<script src="app.js?v=1795716880"></script>
 </body>
 </html>
