@@ -2935,11 +2935,35 @@ html[dir=ltr] .cm-g.on{box-shadow:inset 4px 0 0 #185FA5}
 .tp-s1{width:130px!important}.tp-s2{width:170px!important}
 .tp-row{grid-template-columns:110px 120px auto!important}
 .tp-cl{font-size:14px;color:#12223F}
+/* subject window v2: add row on top, classes table + teachers of the subject side by side, short lists */
+.se-add{display:flex;align-items:flex-start;flex-wrap:wrap;border:1.5px solid #86C46A;background:#F7FCF4;border-radius:10px;padding:6px;margin-bottom:8px}
+.se-add>*{margin:2px 4px}
+.se-dd{position:relative}
+.se-ddb{width:170px;height:38px;text-align:start;font-weight:800;cursor:pointer;background:#fff}
+.se-ddl{position:absolute;top:100%;right:0;z-index:40;background:#fff;border:1.5px solid #CBD5E1;border-radius:10px;box-shadow:0 12px 30px rgba(15,30,58,.18);min-width:220px;max-height:300px;overflow:auto;padding:4px;margin-top:3px}
+html[dir=ltr] .se-ddl{right:auto;left:0}
+.se-opt{display:flex;align-items:center;padding:4px 6px;font-size:14px;font-weight:700;cursor:pointer;border-radius:6px}
+.se-opt:hover{background:#F1F5F9}
+.se-opt input{margin:0;margin-inline-end:6px}
+.se-opt small{color:#64748B;font-weight:600;margin-inline-start:4px}
+.se-opt.all{color:#1D5FA6;border-bottom:1px dashed #E2E8F0}
+.se-tsel{width:180px!important;height:38px!important}
+.se-cols .se-p1{flex:1.2 1 360px}.se-cols .se-p2{flex:1 1 260px}
+.se-list .te-li{display:grid;grid-template-columns:96px 150px auto auto;justify-content:start;align-items:center}
+.se-t{width:150px!important;flex:none!important}
+.se-hl{background:#DCEBFA!important;border-color:#185FA5!important}
+.se-tt{width:100%;border-collapse:collapse}
+.se-tt th{background:#F1F5F9;font-size:12.5px;color:#475569;font-weight:800;padding:5px;border:1px solid #CBD5E1;text-align:start}
+.se-tt td{border:1px solid #CBD5E1;padding:4px 6px;font-size:13.5px;font-weight:700;cursor:pointer}
+.se-tt tr:hover td{background:#F8FAFC}
+.se-tt tr.on td{background:#DCEBFA;color:#0C447C}
+.se-tt tr.no td{color:#B42318;background:#FDF6F6}
+.se-tc{font-size:12.5px!important;color:#475569;font-weight:600!important}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795718169"></script>
+<script src="app.js?v=1795719435"></script>
 </body>
 </html>
