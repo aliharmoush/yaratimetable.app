@@ -2693,11 +2693,32 @@ html[dir=ltr] .sb3-tbl .st1{right:auto;left:0}html[dir=ltr] .sb3-tbl .st2{right:
 .cs-subs{max-height:52vh;overflow:auto}
 .cs-addsub{display:flex;align-items:center;margin-top:8px}
 .cs-addsub .input{flex:1;margin-inline-end:8px}
+/* classes page, compact: one column per cycle, everything on one screen (26/11/2026) */
+.ab-sm .ab-tile{width:40px;height:34px;border-width:1.5px;border-radius:8px;font-size:10.5px;gap:1px}
+.ab-sm{gap:4px}
+.cs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));grid-gap:10px;align-items:start}
+.cs-col{min-width:0}
+.cs-cyh{background:#EEEDFE;color:#3C3489;font-weight:800;font-size:14px;border-radius:8px;padding:4px 10px;margin-bottom:6px}
+.cs-card{border:1.5px solid #94A3B8;border-radius:10px;padding:6px 7px;margin-bottom:7px;background:#fff}
+.cs-ch{display:flex;align-items:center;padding-bottom:5px;border-bottom:1px solid #E2E8F0;margin-bottom:4px}
+.cs-gname{font-size:16.5px;color:#12223F;margin-inline-end:6px}
+.cs-gp{background:#1E3A6B;color:#fff;border-radius:6px;padding:0 7px;font-size:12px;font-weight:800;white-space:nowrap}
+.cs-sec{display:flex;align-items:center;padding:3px 0;border-bottom:1px dashed #E2E8F0}
+.cs-sec:last-of-type{border-bottom:0}
+.cs-sec.new{background:#F7FCF4}
+.cs-sl{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;border-radius:7px;background:#185FA5;color:#fff;font-weight:800;font-size:14px;margin-inline-end:6px;padding:0 4px}
+.cs-sec .cs-ok,.cs-sec .cs-no{font-size:12.5px}
+.cs-sec small{color:#64748B;font-weight:600}
+.cs-addsec{display:block;width:100%;margin-top:5px;height:28px;border:1.5px dashed #86C46A;background:#F3FAEE;color:#2F6B12;border-radius:8px;font:inherit;font-size:13px;font-weight:800;cursor:pointer}
+.cs-addsec:hover{background:#E0F2D6}
+.cs-addsec:disabled{opacity:.5}
+.cs .tq-box{padding:8px 10px}
+.cs-cnt{font-size:14px;color:#64748B;font-weight:600}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795695873"></script>
+<script src="app.js?v=1795696179"></script>
 </body>
 </html>
