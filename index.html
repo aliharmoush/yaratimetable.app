@@ -3050,11 +3050,14 @@ table.whole.hv tbody tr:not(.w-focus) th.wl{color:#1E3A8A}
 .whole-wrap .whole td.wc .wcard{font-size:clamp(12px,calc(var(--rh,30px) * .3),15px)}
 .whole-wrap .whole .wcard .wct{font-size:clamp(10px,calc(var(--rh,30px) * .23),12.5px)}
 @media print{.whole-wrap .whole td.wc{height:18px}.whole-wrap .whole .wcard{min-height:16px;font-size:8px}}
+/* tray: cards keep their own size even when the tray is made taller */
+.cards-list{align-items:flex-start;align-content:flex-start}
+.cards-list .ucard{flex:0 0 auto;height:auto}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795725361"></script>
+<script src="app.js?v=1795725647"></script>
 </body>
 </html>
