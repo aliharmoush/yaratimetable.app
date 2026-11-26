@@ -3035,11 +3035,18 @@ td.cant.frc .wcard{outline:2px dashed #EF4444;outline-offset:-2px;opacity:1!impo
 table.whole col.wl-col{width:128px}
 table.whole tbody th.wl{overflow:hidden;text-overflow:ellipsis}
 @media print{table.whole col.wl-col{width:auto}}
+/* held lesson: only its class name lights up — no band along the row, nothing fades */
+.whole tr.w-focus{outline:0!important}
+.whole tr.w-focus td.wc:not(.can):not(.cant){background:#F8FAFC;box-shadow:none}
+.whole tr.w-focus td.wc.cant:not(.frc){box-shadow:none}
+.whole tbody:has(tr.w-focus) tr:not(.w-focus) .wcard{opacity:1}
+.whole tbody:has(tr.w-focus) tr:not(.w-focus) th.wl{opacity:1!important;color:#1E3A8A}
+table.whole.hv tbody tr:not(.w-focus) th.wl{color:#1E3A8A}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795724127"></script>
+<script src="app.js?v=1795724524"></script>
 </body>
 </html>
