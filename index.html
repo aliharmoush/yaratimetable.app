@@ -2790,11 +2790,79 @@ html[dir=ltr] .sb3-tbl .st1{right:auto;left:0}html[dir=ltr] .sb3-tbl .st2{right:
 .cs-secx{border:0;background:none;color:#B42318;font-size:13px;font-weight:800;cursor:pointer;width:22px;height:24px;padding:0}
 .cs-secx:hover{background:#FDF0F0;border-radius:6px}
 .cs-secs .cs-addsec{display:inline-block;width:auto;margin:2px;height:30px;padding:0 10px}
+/* teachers page compact (26/11/2026) */
+.tq2-head{margin-bottom:6px}
+.tq2-head .ab-add{margin-inline-start:10px;margin-inline-end:10px}
+.tq2-bar{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:5px}
+.tq2-k{display:inline-flex;flex-direction:column;align-items:center;line-height:1.25;border:1.5px solid #CBD5E1;background:#fff;border-radius:10px;padding:3px 11px;margin:2px;font:inherit;cursor:pointer;color:#334155}
+.tq2-k b{font-size:17px;font-weight:800;color:#12223F}
+.tq2-k span{font-size:12.5px;font-weight:700;white-space:nowrap}
+.tq2-k span i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-inline-end:4px;vertical-align:1px}
+.tq2-k.all{background:#F1F5F9}
+.tq2-k.all.on{background:#1E3A6B;border-color:#1E3A6B;color:#fff}.tq2-k.all.on b{color:#fff}
+.tq2-k.on b{color:inherit}
+.tq2-k.bad{border-color:#F2B0B0;background:#FDF0F0;color:#B42318}.tq2-k.bad b{color:#B42318}
+.tq2-k.bad.on{background:#B42318;color:#fff}.tq2-k.bad.on b{color:#fff}
+.tq2-k.gray.on{background:#64748B;color:#fff}.tq2-k.gray.on b{color:#fff}
+.tq2-fl{font-size:13.5px;font-weight:800;color:#1E3A6B;margin:0 2px 4px}
+.tq2-fl button{border:0;background:#E2E8F0;border-radius:6px;margin-inline-start:6px;cursor:pointer;font-size:12px;padding:1px 7px}
+.tq .tq-box{padding:6px 8px;margin-top:0}
+.tq .tq-tbl{border:1.5px solid #1E3A6B}
+.tq .tq-tbl th{background:#1E3A6B;color:#fff;font-size:15px;border-color:#2C4F86;padding:7px 10px}
+.tq .tq-tbl td{padding:3px 8px}
+.tq .tq-tbl tbody tr:nth-child(even) td{background:#F8FAFC}
+.tq .tq-tbl tbody tr.short td{background:#FEF2F2}
+.tq .tq-name{font-size:16px}
+.tq .tq-nm2{margin-top:2px}
+.tq .tq-sub{padding:2px 8px;margin:2px;font-size:13.5px}
+.tq .ab-tile{width:50px;height:44px}
+.tq .tq-wrap{max-height:none}
+/* ===== one toolbar on every page (26/11/2026) ===== */
+.sv-top.sv-hidden{display:none}
+.pb{display:flex;align-items:center;flex-wrap:wrap;border:1.5px solid #CBD5E1;border-radius:12px;background:#fff;padding:5px 8px;margin-bottom:6px}
+.pb>*{margin:2px 3px}
+.pb-t{font-size:20px;font-weight:800;color:#12223F;margin:0 2px 0 10px}
+.pb-t small{font-size:13px;color:#64748B;font-weight:600}
+.pb-b{min-width:58px;height:48px;border-radius:10px;border:1.5px solid;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;font:inherit;font-size:12.5px;font-weight:800;line-height:1.15;padding:0 8px;cursor:pointer}
+.pb-b .pb-ic{font-size:18px;line-height:1}
+.pb-b.nw{border-color:#86C46A;background:#EEF8E8;color:#2F6B12}.pb-b.nw:hover{background:#E0F2D6}
+.pb-b.ed{border-color:#9CC4EE;background:#EEF5FD;color:#1D5FA6}.pb-b.ed:hover{background:#DFECFB}
+.pb-b.dl{border-color:#F2B0B0;background:#FDF0F0;color:#B42318}.pb-b.dl:hover{background:#FBE1E1}
+.pb-b.dim{opacity:.45}
+.pb-b.un{border-color:#CBD5E1;background:#F8FAFC;color:#475569}
+.pb-b.sv{border-color:#CBD5E1;background:#F8FAFC;color:#64748B}
+.pb-b.sv.on{border-color:#1E3A6B;background:#1E3A6B;color:#fff}
+.pb-b:disabled{cursor:default}.pb-b.un:disabled{opacity:.45}
+.pb-sep{width:1px;height:36px;background:#CBD5E1}
+.pb-sel{font-size:13.5px;color:#64748B;font-weight:600;margin-inline-start:8px!important}
+.pb-sel b{color:#185FA5;font-size:15px;font-weight:800}
+.pb-sel em{font-style:normal;color:#94A3B8}
+tr.pb-on>td,.pb-on{background:#DCEBFA!important}
+tr.pb-on>td:first-child{box-shadow:inset -4px 0 0 #185FA5}
+html[dir=ltr] tr.pb-on>td:first-child{box-shadow:inset 4px 0 0 #185FA5}
+tr.pb-row{cursor:pointer}
+.cs-ch{cursor:pointer;border-radius:7px}
+.cs-card.pb-on{box-shadow:0 0 0 2.5px #185FA5}
+.cs-card.pb-on .cs-ch{background:#DCEBFA}
+.cs-sec{cursor:pointer}
+.cs-sec.pb-on{border-color:#185FA5!important;box-shadow:0 0 0 2px #185FA5}
+.cs-ask{display:flex;flex-wrap:wrap;justify-content:center}
+.cs-ask .pb-b{height:64px;min-width:180px;font-size:15px;margin:6px}
+.sb3-head>.pb{flex:1 1 100%;margin-bottom:4px}
+/* entry sheet compact header */
+.es .pb{margin-bottom:3px}
+.es-mini{display:inline-flex;align-items:center;font-size:13px;font-weight:700;color:#7A4108}
+.es-mini .es-prog{width:120px;margin:0 6px}
+.es-legend2{display:flex;flex-wrap:wrap;align-items:center;font-size:12px;margin:0 0 4px}
+.es-legend2>span{margin-inline-end:12px}
+.es-hint2{color:#64748B}
+.es-row.pb-on{background:#DCEBFA!important;box-shadow:inset -4px 0 0 #185FA5}
+.es-row.pb-row{cursor:pointer}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795704353"></script>
+<script src="app.js?v=1795713907"></script>
 </body>
 </html>
