@@ -3053,11 +3053,31 @@ table.whole.hv tbody tr:not(.w-focus) th.wl{color:#1E3A8A}
 /* tray: cards keep their own size even when the tray is made taller */
 .cards-list{align-items:flex-start;align-content:flex-start}
 .cards-list .ucard{flex:0 0 auto;height:auto}
+/* classes: add a subject with its periods and teacher; teacher shown next to each subject */
+.cm-addn{margin-inline-end:6px}
+.cm-addt{width:150px!important;height:32px!important;font-size:13.5px!important;margin-inline-end:6px}
+.cm-sub{grid-template-columns:130px auto auto!important}
+.cm-tch{font-size:12.5px;color:#334155;margin-inline-start:10px;white-space:nowrap}
+.cm-tch.miss{color:#B91C1C;font-weight:800}
+.cm-tch bdi.miss{color:#B91C1C;font-weight:800}
+.cm-tp{display:inline-flex;align-items:center;gap:4px}
+.cm-tp.miss{color:#B91C1C;font-weight:800}
+.cm-sx{background:#1D3A6B;color:#fff;border-radius:5px;padding:0 5px;font-size:11px;line-height:17px}
+.cm-dot{color:#94A3B8;margin:0 4px}
+/* teacher details: add lessons by subject → class → sections */
+.tp-addrow{display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px;border-radius:12px;padding:4px 6px}
+.tp-addrow.ring{background:#EFF6FF;border:2px solid #3B82F6;box-shadow:0 0 0 4px #BFDBFE}
+.tp-chips{display:inline-flex;gap:4px}
+.tp-chips button{border:1.5px solid #1D3A6B;background:#fff;color:#1D3A6B;border-radius:7px;padding:3px 10px;font:inherit;font-weight:800;font-size:13px;cursor:pointer;min-height:30px}
+.tp-chips button.on{background:#1D3A6B;color:#fff}
+.tp-nn{font-weight:800;color:#1D3A6B;font-size:13px;white-space:nowrap}
+.tp-take{flex-basis:100%;font-size:12.5px;color:#B45309;font-weight:800}
+.tp-newb{font-size:10.5px;background:#16A34A;color:#fff;border-radius:99px;padding:1px 7px;margin-inline-start:6px}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795726259"></script>
+<script src="app.js?v=1795727438"></script>
 </body>
 </html>
