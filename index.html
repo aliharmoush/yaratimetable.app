@@ -3031,11 +3031,15 @@ td.cant.frc .wcard{outline:2px dashed #EF4444;outline-offset:-2px;opacity:1!impo
 .whole tbody:has(tr.w-focus) tr:not(.w-focus) th.wl,table.whole.hv tbody th.wl{opacity:1!important;color:#94A3B8}
 .whole tbody tr.w-focus th.wl{color:#2A1A00!important}
 .mw-c{min-width:46px;max-width:72px;overflow:hidden;text-overflow:ellipsis;font-size:11px}
+/* the class-name column keeps its width (the grid uses a fixed layout) */
+table.whole col.wl-col{width:128px}
+table.whole tbody th.wl{overflow:hidden;text-overflow:ellipsis}
+@media print{table.whole col.wl-col{width:auto}}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795723464"></script>
+<script src="app.js?v=1795723694"></script>
 </body>
 </html>
