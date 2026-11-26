@@ -2724,11 +2724,29 @@ html[dir=ltr] .sb3-tbl .st1{right:auto;left:0}html[dir=ltr] .sb3-tbl .st2{right:
 .cs-nsec small{flex-basis:100%;color:#64748B;font-weight:600;font-size:12.5px;margin-top:3px}
 .cs-copy{margin-bottom:6px}
 .cs-new-modal .cs-subs{max-height:46vh}
+/* new class: one row (name combo · cycle · sections) */
+.cs-row{display:flex;flex-wrap:wrap;align-items:flex-end;margin:0 -4px}
+.cs-row .te-f{margin:0 4px 4px}
+.cs-namef{flex:2 1 260px}.cs-stagef{flex:1 1 150px}.cs-secf{flex:0 0 auto}
+.cs-secf .te-stp{height:40px}
+.cs-combo{position:relative}
+.cs-combo .input{padding-inline-end:34px;font-size:16px;font-weight:800;border:2px solid #185FA5}
+.cs-cbtn{position:absolute;top:0;bottom:0;left:0;width:34px;border:0;background:none;font-size:16px;color:#185FA5;cursor:pointer}
+[dir=ltr] .cs-cbtn{left:auto;right:0}
+.cs-dd{position:absolute;top:100%;right:0;left:0;z-index:30;background:#fff;border:1.5px solid #CBD5E1;border-radius:10px;box-shadow:0 12px 30px rgba(15,30,58,.18);max-height:300px;overflow:auto;margin-top:3px}
+.cs-dd button{display:block;width:100%;text-align:start;border:0;border-bottom:1px solid #F1F5F9;background:#fff;padding:7px 12px;font:inherit;font-size:15px;font-weight:700;color:#1E293B;cursor:pointer}
+.cs-dd button:hover,.cs-dd button.on{background:#EEF5FD;color:#0C447C}
+.cs-ddh{background:#F1F5F9;color:#64748B;font-size:12px;font-weight:800;padding:3px 12px}
+.cs-dd .cs-ddnew{background:#EEF8E8;color:#2F6B12}
+.cs-hint{font-size:12.5px;color:#64748B;margin:2px 0 8px}
+.cs-subh{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.cs-subh .cs-copy{width:auto;min-width:200px;margin:0;height:34px;font-size:13.5px}
+.cs-subpn .cs-subs{max-height:44vh}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795696621"></script>
+<script src="app.js?v=1795697185"></script>
 </body>
 </html>
