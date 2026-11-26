@@ -2858,11 +2858,47 @@ tr.pb-row{cursor:pointer}
 .es-hint2{color:#64748B}
 .es-row.pb-on{background:#DCEBFA!important;box-shadow:inset -4px 0 0 #185FA5}
 .es-row.pb-row{cursor:pointer}
+/* entry sheet: KG to grade 9 on one screen (26/11/2026) — tight rows */
+.es .es-tbl .es-cell{height:34px;border-top-width:2px}
+.es .es-tbl .es-in{height:17px!important;line-height:17px;font-size:12.5px!important}
+.es .es-tbl .es-n{height:14px!important;line-height:14px;font-size:12px!important;width:30px!important}
+.es .es-tbl .es-cell.off .es-n{font-size:11px!important}
+.es .es-tbl .es-rowname{height:30px;font-size:13px}
+.es .es-tbl .es-row{padding:0 2px}
+.es .es-tbl .es-gear{font-size:11.5px;padding:0 4px;border-radius:6px}
+.es .es-tbl .es-tot{font-size:14px}
+.es .es-tbl .es-col{height:32px}
+.es .es-tbl .es-colname{font-size:12.5px;padding:1px 12px}
+.es .es-tbl tfoot td,.es .es-tbl tfoot th{height:28px}
+.es .es-dot{top:2px;left:2px;width:6px;height:6px}
+/* classes page: list on the right, details of the chosen class on the left (26/11/2026) */
+.cm{display:flex;align-items:flex-start}
+.cm-list{flex:0 0 250px;border:1.5px solid #CBD5E1;border-radius:12px;background:#fff;padding:5px;margin-inline-end:10px;max-height:calc(100vh - 190px);overflow:auto}
+.cm-cy{font-size:15px!important;padding:4px 10px!important;margin:4px 0 3px!important}
+.cm-g{display:flex;align-items:center;width:100%;border:0;border-bottom:1px solid #F1F5F9;background:#fff;padding:6px 10px;font:inherit;cursor:pointer;text-align:start;border-radius:7px}
+.cm-g b{flex:1;font-size:15px;font-weight:800;color:#12223F}
+.cm-g small{font-size:12.5px;color:#64748B;font-weight:700;margin:0 6px}
+.cm-g em{font-style:normal;background:#FDE2E2;color:#B42318;border-radius:6px;padding:0 6px;font-size:12px;font-weight:800}
+.cm-g:hover{background:#F1F5F9}
+.cm-g.on{background:#DCEBFA;box-shadow:inset -4px 0 0 #185FA5}
+html[dir=ltr] .cm-g.on{box-shadow:inset 4px 0 0 #185FA5}
+.cm-det{flex:1;min-width:0;border:1.5px solid #185FA5;border-radius:12px;background:#fff;padding:10px 12px}
+.cm-dh{display:flex;align-items:center;margin-bottom:8px}
+.cm-dh b{font-size:20px;color:#12223F;margin-inline-end:10px}
+.cm-dh .cs-gp{font-size:13px;padding:1px 9px}
+.cm-dirty{margin-inline-start:10px;color:#B45309;font-weight:800;font-size:13px}
+.cm-secs{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid #E2E8F0}
+.cm-lbl{font-size:13.5px;font-weight:800;color:#64748B;margin-inline-end:6px}
+.cm-secs .cs-addsec{display:inline-block;width:auto;height:30px;margin:2px;padding:0 10px}
+.cm-subs{columns:2 260px;column-gap:10px}
+.cm-subs .te-li{break-inside:avoid}
+.cm-sum{margin-top:8px;font-size:15px;font-weight:800;color:#12223F}
+@media (max-width:760px){.cm{flex-direction:column}.cm-list{flex:none;width:100%;max-height:none;margin:0 0 8px}}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795713907"></script>
+<script src="app.js?v=1795715479"></script>
 </body>
 </html>
