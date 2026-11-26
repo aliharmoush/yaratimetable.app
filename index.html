@@ -2959,11 +2959,31 @@ html[dir=ltr] .se-ddl{right:auto;left:0}
 .se-tt tr.on td{background:#DCEBFA;color:#0C447C}
 .se-tt tr.no td{color:#B42318;background:#FDF6F6}
 .se-tc{font-size:12.5px!important;color:#475569;font-weight:600!important}
+/* timetable page: one header row, bigger soft-coloured grid, teacher highlight, names (26/11/2026) */
+.tt-view{width:auto!important;min-width:150px;max-width:220px;height:36px!important;font-weight:800;border:1.5px solid #185FA5!important;background:#EEF5FD!important;color:#0C447C}
+.tt-names{border:1.5px solid #CBD5E1;background:#fff;border-radius:9px;padding:5px 10px;font:inherit;font-size:13.5px;font-weight:800;cursor:pointer;color:#475569}
+.tt-names.on{border-color:#185FA5;background:#185FA5;color:#fff}
+.whole-wrap{max-height:calc(100vh - 170px);overflow:auto}
+table.whole{width:100%;table-layout:fixed}
+table.whole thead th{position:sticky;top:0;z-index:3}
+table.whole thead tr:nth-child(2) th{top:28px}
+table.whole th.wl{position:sticky;right:0;z-index:2;width:110px;font-size:14.5px}
+html[dir=ltr] table.whole th.wl{right:auto;left:0}
+table.whole thead th.wl{z-index:4}
+table.whole td.wc{height:38px;padding:2px}
+table.whole .wcard{font-size:13.5px;font-weight:800;border-radius:6px;padding:4px 1px;line-height:1.15;text-shadow:none;transition:opacity .12s,box-shadow .12s}
+table.whole .wcard .wct{display:block;font-size:10.5px;font-weight:700;opacity:.85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+table.whole td.dayend{border-inline-end:3px solid #1E3A6B!important}
+table.whole.hv .wcard{opacity:.35}
+table.whole.hv .wcard.hv-on{opacity:1;box-shadow:0 0 0 2.5px #12223F}
+@media print{table.whole.hv .wcard{opacity:1}.tt-view,.tt-names{display:none!important}.whole-wrap{max-height:none;overflow:visible}}
+table.whole .wcard{filter:none;box-shadow:0 0 0 1px rgba(15,30,58,.08);flex-direction:column;min-height:32px}
+table.whole.hv .wcard.hv-on{box-shadow:0 0 0 2.5px #12223F}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795719435"></script>
+<script src="app.js?v=1795721176"></script>
 </body>
 </html>
