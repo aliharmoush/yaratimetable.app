@@ -3042,11 +3042,19 @@ table.whole tbody th.wl{overflow:hidden;text-overflow:ellipsis}
 .whole tbody:has(tr.w-focus) tr:not(.w-focus) .wcard{opacity:1}
 .whole tbody:has(tr.w-focus) tr:not(.w-focus) th.wl{opacity:1!important;color:#1E3A8A}
 table.whole.hv tbody tr:not(.w-focus) th.wl{color:#1E3A8A}
+.tm-hud{display:inline-flex;gap:4px}
+.tm-hud .tm-ud{padding:6px 12px;font-size:17px;min-height:40px}
+/* rows grow to fill the screen (set from the page) */
+.whole-wrap .whole td.wc{height:var(--rh,30px)}
+.whole-wrap .whole .wcard{min-height:calc(var(--rh,30px) - 4px)}
+.whole-wrap .whole td.wc .wcard{font-size:clamp(12px,calc(var(--rh,30px) * .3),15px)}
+.whole-wrap .whole .wcard .wct{font-size:clamp(10px,calc(var(--rh,30px) * .23),12.5px)}
+@media print{.whole-wrap .whole td.wc{height:18px}.whole-wrap .whole .wcard{min-height:16px;font-size:8px}}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <noscript>YARA TIMETABLE requires JavaScript.</noscript>
-<script src="app.js?v=1795724791"></script>
+<script src="app.js?v=1795725361"></script>
 </body>
 </html>
